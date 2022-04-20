@@ -11,6 +11,7 @@
 body{
    text-align: center;
    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+ 
 }
 
 
@@ -20,6 +21,7 @@ body{
 .container-height{
     width: 100%;
     min-height: 450px;
+    max-height: auto;
     align-items: center;
     justify-content: center;
 }
@@ -30,7 +32,7 @@ body{
 
 header.abajo{
     background:var(--color-darkpurple);
-    padding: 3px 1.5px;
+    padding: 4px 2px;
 }
 header .abajo .logo,
 header.abajo ul li a{
@@ -42,25 +44,29 @@ header{
     width: 100%;
     padding: 0.188rem 0.094rem;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
+    position: fixed;
 }
 #logo{
     transition: 1.5s;
     position:relative;
     right: 1rem;
-    width: 23rem;
-    height: 4.5rem;   
+    width: 100%;
+    height: 4.5rem;
+    min-width: auto;
+    min-height: auto;   
 }
 header ul li a:hover{
     color:var(--color-orange);
 }
 header ul{
     display:flex;
-    margin:0 1rem 0px 0px;
+    gap:30px;
+    
 }
 header ul li{
     list-style: none;
-    margin:0 30px 0 30px;
+    
     font-weight: 600;
 }
 header ul li a{
@@ -95,22 +101,21 @@ header ul li a{
 }
 
 
-/*AQUI TERMINA LA PORTADA Y EMPIEZA SECCIÓN MÁS VENDIDOS*/
+/*MÁS VENDIDOS*/
 
 
 #mas-vendido{
-  display: block;
+
   justify-content: center;
   align-items: center;
-  margin: 2%;
   text-align: left;
 }
 #h2-mas-vendido{
     text-align: center;
 }
 #flex-mas-vendido{
-  display:flex;
-  margin:2%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 3fr));
 }
 .div-mas-vendido{
     margin:0 2rem 0 2rem;
@@ -127,24 +132,30 @@ header ul li a{
 
 
 #servicios{
-    display: block;
+   
+    height: 100%;
     justify-content: center;
     align-items: center;
     background: linear-gradient(var(--color-orange),var(--color-darkpurple));
-    z-index: 0;
+    
+    
 }
 #h2-syp{
     margin:10px 0 0 0;
 }
 #flex-servicios{
-    display:flex;
-    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 3fr));
+    gap:30px;
     
 }
 .tarjeta-syp{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
     background-color: var(--color-white);
     box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, 0.2);
-    z-index: 1;
+   
     margin: 2%;
     padding:1%;
 }
@@ -175,7 +186,9 @@ header ul li a{
 
 
 #quienes-somos{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+    gap:20px;
     justify-content: center;
     align-items: center;
     background: linear-gradient(var(--color-orange),var(--color-darkpurple));
@@ -257,16 +270,18 @@ header ul li a{
 
 
 #footer{
+    
     position: relative;
-    display:grid;
     height:auto;
     background: linear-gradient(var(--color-darkpurple),var(--color-orange));
-    color:white;
+    color:var(--color-white);
+    
 }
 #footer-grid{
    display: grid;
-   grid-template-columns: 1fr;
-   grid-gap: 20px;
+   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+   grid-gap: 25px;
+   padding: 10px;
 }
 #nav-footer ul{
     display: flex;
