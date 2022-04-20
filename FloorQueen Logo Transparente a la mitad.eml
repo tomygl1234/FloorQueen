@@ -1,0 +1,148 @@
+Delivered-To: tomasgimenezlascano123@gmail.com
+Received: by 2002:a9d:6456:0:0:0:0:0 with SMTP id m22csp8072866otl;
+        Sun, 27 Mar 2022 18:20:03 -0700 (PDT)
+X-Received: by 2002:a2e:1617:0:b0:24a:a6b4:40b2 with SMTP id w23-20020a2e1617000000b0024aa6b440b2mr10617871ljd.83.1648430402959;
+        Sun, 27 Mar 2022 18:20:02 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1648430402; cv=none;
+        d=google.com; s=arc-20160816;
+        b=zbM9QcahJpYweG4MZUzGqp3P3QeS90MFq4Ja2iUp+MX3WhCOL16ErSbsKCLllpYmLt
+         DxEZYugwGsS8eZlarqi2MqnEJqXxLlG6OXKp+TDnx5/JnP4ac74pCPIdW8GgXPDsHeOu
+         d9H4ml6LJCBneYCqdhb6dx9uf9ls3Pq7SOOSCBgT/HOvh//uqlxkOy65eNZTdtnumpwk
+         AvnlcXQ38p30HvrAwzrh4Z0dvzN8GHzzcN9pn9BdnFtYHlm4Wlo94ZcdHjtC16JrGbSQ
+         SVjPV9MKrcHjXIQQ+YYbmHcgm4OpG1mpLTWCCAiyXnX9vg21VGJsGNzHrTZLBE5wMZXn
+         9rQA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature;
+        bh=OAcx6NfxTcUN81zxYlNVduPEp9EHgu1uOX6h8kk6nAU=;
+        b=smUsHtoOa/DPelS9Gcf8ihHck6/xmLUd+FU+f5q7LysnO0LQ6eG+CBUb/KE6tMr+8l
+         11PxcwRBfMBf2dqwxO+5peXZKABJcOQrwA7+Qc+d8cBr/ZOMDCpCMxPh3o2zbgs+Jpsv
+         SO9QVGiAAn4mNthq+h73N4mlowX3Nwjanqt3t9ZRrEgib/WuWDf+PqVX0L7gkI9nxd7B
+         20AQeHGxp0rQIqhOFNzXdE1Ym9EZsuxpUPPqm/+lffczefelfNdilDEM/PlQNN/+wsKZ
+         ewpF2XRvfSLc+sgoyRiHmLTbXCAKtGz2JFv5uGJ3zuYs64oYcs9dtqqdIc0SZIve1Cwb
+         H1fw==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20210112 header.b=bT8dPOdP;
+       spf=pass (google.com: domain of saimonalbornoz94@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=saimonalbornoz94@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <saimonalbornoz94@gmail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id q10-20020a0565123a8a00b0044a3a9bbb29sor1899383lfu.66.2022.03.27.18.20.02
+        for <tomasgimenezlascano123@gmail.com>
+        (Google Transport Security);
+        Sun, 27 Mar 2022 18:20:02 -0700 (PDT)
+Received-SPF: pass (google.com: domain of saimonalbornoz94@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20210112 header.b=bT8dPOdP;
+       spf=pass (google.com: domain of saimonalbornoz94@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=saimonalbornoz94@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=mime-version:from:date:message-id:subject:to;
+        bh=OAcx6NfxTcUN81zxYlNVduPEp9EHgu1uOX6h8kk6nAU=;
+        b=bT8dPOdP1JQ1mz6aakeDlseONaye8o63Pwznmq3hS9HBImtdnIxCjj167bTiTGe0CX
+         Jsu/VmgxSM/57r0Yph6L+u5UDsbzYrkDLj4HyjAh2fxD/lzEaeEjcscvidg0BXa/aCCK
+         yhLtW1X8iVx4OXq8PKWDaCE9uU6YkrneoY6TwtvHtbVgBz9J//UPRPUVIW48G0efO+V3
+         K4bmuBdIXwocz4L6PSlGzNSimB+GRkXNYzi/lJdJDelKM/sHq2hs4wMl5/8BlFZNzGeN
+         DaH7f16Q5/QK1IJj1X/erOEY5BDkbEXaq4MWDgJZ2OUQdJwPpywzO64vFyzbtj3qOcA0
+         b9Ww==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=x-gm-message-state:mime-version:from:date:message-id:subject:to;
+        bh=OAcx6NfxTcUN81zxYlNVduPEp9EHgu1uOX6h8kk6nAU=;
+        b=NoYaNv3V1hBiFO2HlcBTn6qGIO7ErbefZdOoBXmk1faGWiKhARPVyZTFY28Ej1udwp
+         IHW6v/N6g8B9ZkDv1wt6XnpqTPZWIhjUmDAAJsBYi5udJogACTNLGkx9Bt7Brm2ztU9v
+         7yu5WloW2vD/6Mhfj/D59nBfgFniDvsWFpEEEarMPr5iw2m6aN2WadcyUKPCnvZJwYjw
+         anwaKQozM0ldLp2Ph05kYLVkKblx6j/I5kHSrakn4YZlZPAcleJgj/R0SDaoJrpA+7wX
+         ZnscIeuqTfdcFeDNkW4D0Q6gAcTuGxkPpSfMsZ/KOomi+JHqp8p/alz1osFag6zWOPDw
+         LC0g==
+X-Gm-Message-State: AOAM532KRvfp9ZXuO0UulTF78/eKAoyM3mPbL5gb9UJ9vfacATpBDFth
+	cVyu8YZ93++pYmKKfSEkXvgkXLjbVojalikGLaNh52yZ
+X-Google-Smtp-Source: ABdhPJyJO08cGcbyeyeEnz2JPKdv59Um6WtxZl3JucnD+bOJfIbAPLACM7AlD19+geCAIL5+LBkIu89eUOvkUX2Fu0Q=
+X-Received: by 2002:a05:6512:1092:b0:44a:72f4:a253 with SMTP id
+ j18-20020a056512109200b0044a72f4a253mr12402555lfg.532.1648430402548; Sun, 27
+ Mar 2022 18:20:02 -0700 (PDT)
+MIME-Version: 1.0
+From: Saimon Albornoz <saimonalbornoz94@gmail.com>
+Date: Sun, 27 Mar 2022 22:20:24 -0300
+Message-ID: <CA+mazQR-tb8bBLUb+Z+EdypFF53Q8OzxLcdpCtfjYoMahkCEYQ@mail.gmail.com>
+Subject: FloorQueen Logo Transparente a la mitad
+To: tomasgimenezlascano123@gmail.com
+Content-Type: multipart/related; boundary="00000000000094ccc805db3d1ca4"
+
+--00000000000094ccc805db3d1ca4
+Content-Type: multipart/alternative; boundary="00000000000094ccc705db3d1ca3"
+
+--00000000000094ccc705db3d1ca3
+Content-Type: text/plain; charset="UTF-8"
+
+[image: Floor Queen PNG Transparente Half.png]
+
+--00000000000094ccc705db3d1ca3
+Content-Type: text/html; charset="UTF-8"
+
+<div dir="ltr"><img src="cid:ii_l1a0ws310" alt="Floor Queen PNG Transparente Half.png" width="338" height="85"><br></div>
+
+--00000000000094ccc705db3d1ca3--
+--00000000000094ccc805db3d1ca4
+Content-Type: image/png; name="Floor Queen PNG Transparente Half.png"
+Content-Disposition: inline; 
+	filename="Floor Queen PNG Transparente Half.png"
+Content-Transfer-Encoding: base64
+Content-ID: <ii_l1a0ws310>
+X-Attachment-Id: ii_l1a0ws310
+
+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
+--00000000000094ccc805db3d1ca4--

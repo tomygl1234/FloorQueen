@@ -1,0 +1,309 @@
+:root {
+    --color-white: #FFFFFF;
+    --color-darkpurple: #A5356D;
+    --color-orange: #F09E1C;
+    --color-grey: #54595F;
+  }
+*{ 
+    margin: 0%;
+    padding: 0%;
+}
+body{
+   text-align: center;
+   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+/*ALTURA Y ANCHO DE LAS SECCIONES*/
+
+
+.container-height{
+    width: 100%;
+    min-height: 450px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*AQUI VA TODO LO DEL HEADER*/
+
+
+header.abajo{
+    background:var(--color-darkpurple);
+    padding: 3px 1.5px;
+}
+header .abajo .logo,
+header.abajo ul li a{
+    color: var(--color-white);    
+}
+header{
+    display:flex;
+    background-color: var(--color-darkpurple);
+    width: 100%;
+    padding: 0.188rem 0.094rem;
+    align-items: center;
+    justify-content: space-between;
+}
+#logo{
+    transition: 1.5s;
+    position:relative;
+    right: 1rem;
+    width: 23rem;
+    height: 4.5rem;   
+}
+header ul li a:hover{
+    color:var(--color-orange);
+}
+header ul{
+    display:flex;
+    margin:0 1rem 0px 0px;
+}
+header ul li{
+    list-style: none;
+    margin:0 30px 0 30px;
+    font-weight: 600;
+}
+header ul li a{
+    color:var(--color-white);
+    outline: none;
+    text-decoration: none;
+    padding: 2px 1px 0; 
+}
+
+
+
+/*TERMINA EL HEADER Y EMPIEZA LA PORTADA*/
+
+
+.portada-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: block;
+    background-image: url("/PORTADAALFOMBRA.jpg");
+    background-position: center bottom 25%;
+    
+    
+    background-size:cover;
+    height: 20rem;  
+}
+#title{
+   
+    color:var(--color-white);
+}
+
+
+/*AQUI TERMINA LA PORTADA Y EMPIEZA SECCIÓN MÁS VENDIDOS*/
+
+
+#mas-vendido{
+  display: block;
+  justify-content: center;
+  align-items: center;
+  margin: 2%;
+  text-align: left;
+}
+#h2-mas-vendido{
+    text-align: center;
+}
+#flex-mas-vendido{
+  display:flex;
+  margin:2%;
+}
+.div-mas-vendido{
+    margin:0 2rem 0 2rem;
+}
+.img-mas-vendido{
+    
+    max-width: 100%;
+    max-height: 400px;
+    
+}
+
+
+/*SERVICIOS Y PRODUCTOS*/
+
+
+#servicios{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(var(--color-orange),var(--color-darkpurple));
+    z-index: 0;
+}
+#h2-syp{
+    margin:10px 0 0 0;
+}
+#flex-servicios{
+    display:flex;
+    margin: 0;
+    
+}
+.tarjeta-syp{
+    background-color: var(--color-white);
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    margin: 2%;
+    padding:1%;
+}
+.h3-tarjeta-syp{
+
+}
+.p-tarjeta-syp{
+
+}
+.btn-tgt-syp{
+
+}
+
+
+/* QUEREMOS QUE ENCUENTRES LO QUE BUSCAS */
+
+
+#que-lo-buscas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+
+/* QUIENES SOMOS*/
+
+
+#quienes-somos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(var(--color-orange),var(--color-darkpurple));
+    z-index: 0;
+
+}
+
+
+/*NUESTROS CLIENTES NOS RECOMIENDAN PORQUE*/
+
+
+#nos-recomiendan{
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*FORMULARIO DE CONTACTO*/
+
+
+#form-container{
+    display: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(var(--color-orange),var(--color-darkpurple));
+    z-index: 0;
+
+}
+#form-container1{
+    color:var(--color-grey);
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, 0.2);
+    padding: 25px;
+    margin:10px 30rem 10px 30rem ;
+    border-radius: 15px;
+}
+#form-container h2{
+    margin: 10px;
+}
+#contact-form{
+    
+    
+    
+}
+
+
+/*PREGUNTAS FRECUENTES*/
+
+
+#preguntas-frecuentes{
+    display: flex;
+    flex-direction: column;
+    
+}
+#preguntas-frecuentes ul{
+   text-align: left;
+}
+#preguntas-frecuentes li{
+    list-style: none;
+}
+#preguntas-frecuentes h2{
+    font-weight: 600;
+
+}
+#preguntas-frecuentes h3{
+    font-weight: 400;
+}    
+#preguntas-frecuentes p{
+    font-weight: 400;
+
+}
+
+
+/* FOOTER */
+
+
+#footer{
+    position: relative;
+    display:grid;
+    height:auto;
+    background: linear-gradient(var(--color-darkpurple),var(--color-orange));
+    color:white;
+}
+#footer-grid{
+   display: grid;
+   grid-template-columns: 1fr;
+   grid-gap: 20px;
+}
+#nav-footer ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#nav-footer ul li{
+    margin: 0 50px 0 50px;
+    list-style: none;   
+    text-decoration: none;
+}
+#copyright{
+    position:relative;
+    
+}
+#nav-footer ul li a{
+    color:var(--color-white);
+    outline: none;
+    text-decoration: none;
+    padding: 2px 1px 0; 
+}
+
+
+
+
+/*
+@keyframes cambio{
+    0% {margin-left: 0;}
+    20% {margin-left: 0;}
+
+    25% {margin-left: -100;}
+    45% {margin-left: -100;}
+
+    50% {margin-left: -200;}
+    70% {margin-left: -200;}
+
+    75% {margin-left: -300;}
+    100% {margin-left: -300;}
+}
+*/
