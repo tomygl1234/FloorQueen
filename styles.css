@@ -28,16 +28,6 @@ body{
 
 /*AQUI VA TODO LO DEL HEADER*/
 
-
-header.abajo{
-    background:var(--color-darkpurple);
-    padding: 4px 2px;
-    
-}
-header .abajo .logo,
-header.abajo ul li a{
-    color: var(--color-white);    
-}
 header{
     display:flex;
     background-color: var(--color-darkpurple);
@@ -164,6 +154,7 @@ main{
 #flex-mas-vendido{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 3fr));
+    gap:10px;
 }
 .div-mas-vendido{
     margin:0 2rem 0 2rem;
@@ -194,9 +185,9 @@ main{
     display: grid;
     justify-content: center;
     align-items: center;
-    grid-template-columns: repeat(auto-fit, minmax(min(100%, 25rem), 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 25rem), 1fr));
     gap: 30px;
-    padding: 20px;
+    padding: 30px;
     height: auto;
     
     
@@ -209,7 +200,8 @@ main{
     box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, 0.2);
     height: 350px;
     padding: 10px;
-    border-radius: 15px;
+    border-radius: 10px;
+    
 
 
 }
@@ -252,7 +244,7 @@ main{
     height:80px;
     background-color:var(--color-orange);
     border-radius: 60px;
-    padding: 10px;
+    padding: 15px;
 }
 #que-lo-buscas h2{
     color:black;
@@ -268,9 +260,18 @@ main{
     gap:20px;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(var(--color-orange),var(--color-darkpurple));
-    color: var(--color-white);
+    background-image: linear-gradient(rgba(5, 7, 12, 0.50), rgba(5, 7, 12, 0.50)),
+    url(/imagenes/Limpieza\ de\ alfombra.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    
+    height: 20rem;  
+    background-position: bottom;
+}
 
+.grid-qs{
+    padding:15px;
+    color:var(--color-white);
 }
 
 
@@ -278,10 +279,22 @@ main{
 
 
 #nos-recomiendan{
-    display: grid;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+}
+#recomendaciones-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+
+}
+
+
+.recomendacion img{
+    width:100px;
+    height: 100px;
+    border-radius:100px;
 }
 
 
@@ -383,25 +396,22 @@ form {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 30px;
     
 }
 #preguntas-frecuentes ul{
    text-align: left;
+   display: flex;
+   flex-direction: column;
+   gap: 50px;
+   margin-bottom: 15px;
 }
 #preguntas-frecuentes li{
-    list-style: none;
+    list-style:circle;
 }
-#preguntas-frecuentes h2{
-    font-weight: 600;
 
-}
-#preguntas-frecuentes h3{
-    font-weight: 400;
-}    
-#preguntas-frecuentes p{
-    font-weight: 400;
 
-}
+
 
 
 /* FOOTER */
