@@ -104,11 +104,24 @@
 
 
         <section id="que-lo-buscas" class="container-height">
-            <div>
+           
+            <div class="quelodiv">
+                <svg xmlns="http://www.w3.org/2000/svg" class="quelosvg" width="52" height="52" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <circle cx="12" cy="12" r="9" />
+                    <line x1="9" y1="9" x2="9.01" y2="9" />
+                    <line x1="15" y1="9" x2="15.01" y2="9" />
+                    <path d="M8 13a4 4 0 1 0 8 0m0 0h-8" />
+                  </svg>
                 <h2>"Queremos que encuentres lo que estabas buscando"</h2>
                 <p>Lorem fistrum por la gloria de mi madre esse jarl aliqua llevame al sircoo. De la pradera ullamco qué dise usteer está la cosa muy malar.</p>
             </div>
-            <div>
+            
+            <div class="quelodiv">
+                <svg xmlns="http://www.w3.org/2000/svg" class="quelosvg" width="52" height="52" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M5 12l5 5l10 -10" />
+                  </svg>
                 <h2>"Productos y servicios de calidad y confianza"</h2>
                 <p>Lorem fistrum por la gloria de mi madre esse jarl aliqua llevame al sircoo. De la pradera ullamco qué dise usteer está la cosa muy malar.</p>
             </div>
@@ -171,67 +184,64 @@
        
         <!--  FORMULARIO DE CONTACTO  -->
 
-
         <section id="form-container" class="container-height">
            
-                <h1>Tu consulta no molesta</h1>
+                <h2>Tu consulta no molesta</h2>
            
             <section id="form-container1">
-                <div>
-                    <form action="" id="contact-form">
-                        <div>
-                            <label 
-                            for="Nombre" 
-                            class="control-form">Nombre</label>
-
+                <div class="container">
+                    <form id="survey-form">
+                    <div class="form-group"> 
+                      <label for="name" id="name-label">Nombre</label>
                        <input 
-                            type="text" 
-                            name="Nombre" 
-                            placeholder="Tu nombre">
-                       <label 
-                            for="Apellido"
-                            class="control-form">Apellido</label>
+                              type="text" 
+                              name="name"
+                              id="name" 
+                              class="form-control" 
+                              placeholder="Tu nombre y apellido"
+                              required/>
+                       
+                    </div>
+                     
+                    <div class="form-group">
+                      <label for="email" id="email-label">Email</label>
                        <input 
-                            type="text" 
-                            name="Apellido" 
-                            placeholder="Tu apellido">
-                        </div>
-                        <div>
-                            <label 
-                            for="Tel"
-                            class="control-form">Tel</label>
+                              type="email" 
+                              name="email" 
+                              id="email" 
+                              class="form-control" 
+                              placeholder="Tu email"
+                              required/>
+                     </div>
+                     <div class="form-group">
+                     <label for="tel" id="number-label">Tel</label>
                        <input 
-                            type="tel"
-                            name="Tel"
-                            placeholder="Tu número de télefono">
-                        </div>
-                       <div>
-                           <label
-                             for="Email"
-                             class="control-form">E-mail</label>
-                        <input 
-                             type="email"
-                             name="Email"
-                             placeholder="Tu e-mail">
-                       </div>
-                        <div>
-                            <label 
-                            for="Mensaje"
-                            class="control-form">Mensaje</label>
+                         type="tel"
+                         name="tel"
+                         id="number"
+                         class="form-control"
+                         placeholder="Número de teléfono"
+                         required/>
+                    </div>
+                      
+                      <div class="form-group">
+                        <label for="input-textarea">Déjanos tu consulta</label>
                         <textarea 
-                            name="Mensaje" 
-                            id="text-area" 
-                            cols="30" 
-                            rows="10" 
-                            placeholder="Déjanos tu mensaje"></textarea>
-
-                        </div>
-                        <div>
-                            <input 
-                            type="submit">
-                        </div>                        
-                    </form>
-                </div>
+                                  id="comments"
+                                  class="textarea"
+                                  name="input-textarea"
+                                  >
+                        </textarea>
+                      </div>
+                      <div class="form-group">
+                        <button 
+                                type="submit" 
+                                id="submit" 
+                                class="submit-button"
+                       >Enviar</button>
+                      </div>
+                   </form>
+                 </div>
             </section>
         </section>
         </main> 
@@ -274,41 +284,76 @@
 
         <footer id="footer" class="container-height">
             <div id="footer-grid">
+
+                <div class="sec contact">
+                    <h2>Contacto</h2>
+                     <ul class="info">
+                          <li>
+                              
+                              <span>
+                                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="15" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                      <circle cx="12" cy="11" r="3" />
+                                      <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
+                                    </svg>
+                              </span>
+                              <span>Luis Saenz Peña 558<br>
+                                  C1110 AAL, Buenos Aires.
+                              </span>
+                          </li>
+                          <li>
+                              
+                              <span><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-phone" width="52" height="52" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                  <path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
+                                </svg></span>
+                              <p><a href="tel:1143123375">1143123375</a><br>
+                              <a href="tel:1157051020">1157051020</a></p>
+                          </li>
+                          <li>
+                              <span><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail" width="52" height="52" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                  <rect x="3" y="5" width="18" height="14" rx="2" />
+                                  <polyline points="3 7 12 13 21 7" />
+                                </svg></span>
+                              <p><a href="mailto:contacto@floorqueen.com.ar">contacto@floorqueen.com.ar</a></p>
+                          </li>
+                          
+                      </ul>
+                </div> 
  
-                 <div>
-                    <nav id="nav-footer">
-                      <ul>
+                 <div class="sec quicklinks">
+                     <h2>Menú</h2>
+                    <nav class="nav-footer">
+                      <ul class="sci">
                         <li><a href="#" alt="Menú Acerca de">Acerca de</a></li>
                         <li><a href="#" alt="Menú Preguntas frecuentes">Preguntas frecuentes</a></li>
-                        <li><a href="#" alt="Menú Privacidad">Privacidad</a></li>
-                        <li><a href="#" alt="Menú Terminos & Condiciones">Terminos & Condiciones</a></li>
                         <li><a href="#" alt="Menú Tienda">Tienda</a></li>
-                        <li><a href="#" alt="Menú Contacto">Contacto</a></li> 
+                        <li><a href="#" alt="Menú Contacto">Contacto</a></li>
+                        <li><a href="#title">Inicio</a></li>
+                        
                       </ul>
                     </nav>
-                  </div>  
-                  <div>
-                    <img src="logo1.png" id="logo">
-                 </div>
-
-         
-                <div>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="52" height="52" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                        <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
-                      </svg>
-                      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="52" height="52" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                        <rect x="4" y="4" width="16" height="16" rx="4" />
-                        <circle cx="12" cy="12" r="3" />
-                        <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
-                      </svg>              
-                </div>
-                <div>
-                     <p id="copyright">Copyright © <script>document.write(Date().split(' ')[3])</script> FloorQueen |  <a href="" style="color: black">Diseñado por Creative Studio</a> | Todos los derechos reservados.</p>
-                </div>
+                  </div>
+                  
+                  <div class="sec Tienda">
+                    <h2>Tienda</h2>
+                    <nav  class="nav-footer"> 
+                     <ul>
+                        <li><a href="#" alt="">Alfombras</a></li>
+                        <li><a href="#" alt="">Lamparas</a></li>
+                        <li><a href="#" alt="">Pisos</a></li>
+                        <li><a href="#" alt="">Vinilos</a></li>
+                    </ul></nav>
+                    
+                    
+                </div> 
+                 
             </div>
         </footer>
+        <div>
+            <p id="copyright">Copyright © <script>document.write(Date().split(' ')[3])</script> FloorQueen |  <a href="" style="color: black">Diseñado por Creative Studio</a> | Todos los derechos reservados.</p>
+       </div>
 
 
         <!-- ANIMACIÓN DEL NAV PRINCIPAL -->
