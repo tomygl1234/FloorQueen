@@ -1,32 +1,35 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title> Floor|Queen </title>
+        <title> Floor | Queen </title>
         <meta charset="utf-8"></meta>
         <meta http-equiv="X-UA-Compatible" content="IE=edge"></meta>
         <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css" integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ==" crossorigin="" />
+        <link rel="stylesheet" type="text/css" href="normalize.css"/>
         <link rel="stylesheet" type="text/css" href="styles.css"/>
+
     </head>
     <body>
 
         <!-- AQUI EMPIEZA EL HEADER-->
 
-        <header>
+        <header class="header contenedor">
             <div>
-                <img src="logo1.png" id="logo">
+                <img src="logo1.png" class="header__logo">
              </div>
-             <div>
-                <nav>
-                  <ul>
-                    <li><a href="#" alt="Menú Inicio">Inicio</a></li>
-                    <li><a href="#" alt="Menú Nosotros">Nosotros</a></li>
-                    <li><a href="#" alt="Menú Servicios">Servicios</a></li>
-                    <li><a href="#" alt="Menú Tienda">Tienda</a></li>
-                    <li><a href="#" alt="Menú Preguntas frecuentes">Preguntas frecuentes</a></li>
-                    <li><a href="#" alt="Menú Contacto">Contacto</a></li> 
-                  </ul>
+
+                <nav class="nav header__nav">
+  
+                    <a class="nav__link" href="#" alt="Menú Inicio">Inicio</a>
+                    <a class="nav__link" href="#" alt="Menú Nosotros">Nosotros</a>
+                    <a class="nav__link" href="#" alt="Menú Servicios">Servicios</a>
+                    <a class="nav__link" href="#" alt="Menú Tienda">Tienda</a>
+                    <a class="nav__link" href="#" alt="Menú Preguntas frecuentes">Preguntas frecuentes</a>
+                    <a class="nav__link" href="#" alt="Menú Contacto">Contacto</a>
+                 
                 </nav>
-              </div>  
+
         </header>
 
 
@@ -37,93 +40,121 @@
 
         <!-- "PORTADA"-->   
 
-        <section class="portada-container">
+        <section class="portada__contenedor contenedor">
+
             <div>
-               <h1 id="title">"Decorá tu casa con nuestras alfombras"</h1> 
+
+               <h1 class="portada__titulo">"Decorá tu casa con nuestras alfombras"</h1> 
+               
+
+               <button class="portada__boton boton">Contacto</button>
+
             </div>  
+
         </section>
 
 
         <!--"¡MAS VENDIDOS!"-->
 
 
-        <section id="mas-vendido" class="container-height">
-            <h2 id="h2-mas-vendido">Lo más vendido...</h2>
-         <section id="flex-mas-vendido">
-            <div class="div-mas-vendido">
-                <img src="/imagenes/6HOXQH7PKRHWHI3FKE66OCFIL4.jpg" alt="" class="img-mas-vendido">
-                <h3>Añade aquí tu texto de cabecera</h3>
-                <p>Lorem fistrum por la gloria de mi madre esse jarl aliqua llevame al sircoo. De la pradera ullamco qué dise usteer está la cosa muy malar.</p>
-            </div>
-            <div class="div-mas-vendido">
-                <img src="/imagenes/6HOXQH7PKRHWHI3FKE66OCFIL4.jpg" alt="" class="img-mas-vendido">
-                <h3>Añade aquí tu texto de cabecera</h3>
-                <p>Lorem fistrum por la gloria de mi madre esse jarl aliqua llevame al sircoo. De la pradera ullamco qué dise usteer está la cosa muy malar.</p>
-            </div>
-            <div class="div-mas-vendido">
-                <img src="/imagenes/6HOXQH7PKRHWHI3FKE66OCFIL4.jpg" alt="" class="img-mas-vendido">
-                <h3>Añade aquí tu texto de cabecera</h3>
-                <p>Lorem fistrum por la gloria de mi madre esse jarl aliqua llevame al sircoo. De la pradera ullamco qué dise usteer está la cosa muy malar.</p>
-            </div> 
-         </section>
+        <section class="destacados__contenedor">
+
+            <h2 class="destacados__h2">Nuestros Productos Destacados</h2>
+
+         <div class="destacados__grid">
+
+            <div class="destacado__tarjeta tarjeta">
+                <img src="/imagenes/6HOXQH7PKRHWHI3FKE66OCFIL4.jpg" alt="" class="destacados__bloque__img">
+                <h3 class="destacado__bloque__h3">Alfombras de felpa</h3>
+                <p class="destacado__bloque__p">Tenemos stock de todos los colores y tipos de alfombra, importadas y locales.</p>
+            </div><!--.bloque-->
+
+            <div class="destacado__tarjeta tarjeta">
+                <img src="/imagenes/decorar-pisos-pequenos-vintage.jpg" alt="" class="destacados__bloque__img">
+                <h3 class="destacado__bloque__h3">Pisos de vinilo</h3>
+                <p class="destacado__bloque__p">Lo más vendido de la semana en cuanto a pisos fueron los simil madera y marmol. Tenemos stock de ambos.</p>
+            </div><!--.bloque-->
+
+            <div class="destacado__tarjeta tarjeta">
+                <img src="/imagenes/lampara_b4177712_600x600.png" alt="" class="destacados__bloque__img">
+                <h3 class="destacado__bloque__h3">Lamparas</h3>
+                <p class="destacado__bloque__p">Nuestras lamparas se venden como pan caliente, aún así tenemos stock.</p>
+            </div> <!--.bloque-->  
+         </div><!--  .destacados__grid  -->
+         <div>
+             <button class="destacados__boton boton">Click aquí para ver todos los productos</button>
+         </div>
+         
+
         </section>
 
 
         <!-- "SERVICIOS Y PRODUCTOS"-->
 
 
-        <section id="servicios"class="container-height">
+        <section class="servicios__contenedor" >
             
-                <h2 id="h2-syp">Servicios y Productos</h2>
+                <h2 class="servicios__h2">¿Qué servicios ofrecemos?</h2>
             
-            <section id="flex-servicios">
+            <div class="servicios__grid">
 
-                <div class="tarjeta-syp">
-                    <h3 class="h3-tarjeta-syp">Alfombras</h3>
-                    <p class="p-tarjeta-syp">Venta, lavado y reparación de alfombras</p>
-                    <button class="btn-tgt-syp">Contacto</button>
-                </div>
+                <div class="servicios__tarjeta tarjeta">
+                    <h3 class="servicios__tarjeta__h3">Alfombras</h3>
+                    <p class="servicios__tarjeta__p">Venta, lavado y reparación de alfombras</p>
+                    <button class="servicios__boton boton">Contacto</button>
+                </div><!--.bloque-->
 
-                <div class="tarjeta-syp">
-                    <h3 class="h3-tarjeta-syp">Overlock</h3>
-                    <p class="p-tarjeta-syp">Corregimos las imperfecciones de los bordes de tu alfombra con nuestras maquinas de alta calidad y precisión. </p>
-                    <button class="btn-tgt-syp">Contacto</button>
-                </div>
+                <div class="servicios__tarjeta tarjeta">
+                    <h3 class="servicios__tarjeta__h3">Overlock</h3>
+                    <p class="servicios__tarjeta__p">Corregimos las imperfecciones de los bordes de tu alfombra con nuestras maquinas de alta calidad y precisión. </p>
+                    <button class="servicios__boton boton">Contacto</button>
+                </div><!--.bloque-->
 
-                <div class="tarjeta-syp">
-                    <h3 class="h3-tarjeta-syp">Pisos flotantes</h3>
-                    <p class="p-tarjeta-syp">Instalamos el piso  que más te guste  a domicilio.</p>
-                    <button class="btn-tgt-syp">Contacto</button>
+                <div class="servicios__tarjeta tarjeta">
+                    <h3 class="servicios__tarjeta__h3">Overlock</h3>
+                    <p class="servicios__tarjeta__p">Corregimos las imperfecciones de los bordes de tu alfombra con nuestras maquinas de alta calidad y precisión. </p>
+                    <button class="servicios__boton boton">Contacto</button>
+                </div><!--.bloque-->
 
-                </div>
-            </section>
+
+                <div class="servicios__tarjeta tarjeta">
+                    <h3 class="servicios__tarjeta__h3">Pisos flotantes</h3>
+                    <p class="servicios__tarjeta__p">Instalamos el piso  que más te guste  a domicilio.</p>
+                    <button class="servicios__boton boton">Contacto</button>
+                </div><!--.bloque-->
+            </div><!--  .servicios__grid  -->
+
+            <div>
+                <button class="servicios__boton--final boton">Click aquí para ver todos los servicios</button>
+            </div>
+
         </section>
 
 
         <!-- Queremos que encuentres lo que buscas..."--> 
 
 
-        <section id="que-lo-buscas" class="container-height">
+        <section class="queremos__contenedor contenedor">
            
-            <div class="quelodiv">
-                <svg xmlns="http://www.w3.org/2000/svg" class="quelosvg" width="52" height="52" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <div class="queremos__bloque--1">
+                <svg xmlns="http://www.w3.org/2000/svg" class="queremos__svg" width="52" height="52" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
                     <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                     <circle cx="12" cy="12" r="9" />
                     <line x1="9" y1="9" x2="9.01" y2="9" />
                     <line x1="15" y1="9" x2="15.01" y2="9" />
                     <path d="M8 13a4 4 0 1 0 8 0m0 0h-8" />
                   </svg>
-                <h2>"Queremos que encuentres lo que estabas buscando"</h2>
-                <p>Lorem fistrum por la gloria de mi madre esse jarl aliqua llevame al sircoo. De la pradera ullamco qué dise usteer está la cosa muy malar.</p>
+                <h2 class="queremos__h2">"Queremos que encuentres lo que estabas buscando"</h2>
+                <p class="queremos__p">Lorem fistrum por la gloria de mi madre esse jarl aliqua llevame al sircoo. De la pradera ullamco qué dise usteer está la cosa muy malar.</p>
             </div>
             
-            <div class="quelodiv">
-                <svg xmlns="http://www.w3.org/2000/svg" class="quelosvg" width="52" height="52" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <div class="queremos__bloque--2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="queremos__svg" width="52" height="52" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
                     <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                     <path d="M5 12l5 5l10 -10" />
                   </svg>
-                <h2>"Productos y servicios de calidad y confianza"</h2>
-                <p>Lorem fistrum por la gloria de mi madre esse jarl aliqua llevame al sircoo. De la pradera ullamco qué dise usteer está la cosa muy malar.</p>
+                <h2 class="queremos__h2">"Productos y servicios de calidad y confianza"</h2>
+                <p class="queremos__p">Lorem fistrum por la gloria de mi madre esse jarl aliqua llevame al sircoo. De la pradera ullamco qué dise usteer está la cosa muy malar.</p>
             </div>
         </section>
 
@@ -131,75 +162,152 @@
          <!-- "QUIENES SOMOS?"-->
 
 
-         <section id="quienes-somos" class="container-height">
+         <section class="quienes-somos__contenedor contenedor">
             
-            <div class="grid-qs">
-                <h3>Nuestro equipo</h3>
-                <p>Contamos con el mejor equipo de asesores y profesionales técnicos para hacer que sientas tranquilidad a la hora de optar por renovar tu hogar.</p>      
-            </div>
-            <div class="grid-qs">
-                <h3>¿Quiénes somos?</h3>
-                <p>Una empresa dedicada a la venta y colocación de pisos, líder en stock, calidad y variedad. Con una atención personalizada, no solo en ventas, sino en el asesoramiento integral para satisfacer su demanda.</p>      
-            </div>
-            <div class="grid-qs">
-                <h3>Tenemos stock</h3>
-                <p>Nos abastecemos de forma permanente con stock para poder suplir la cantidad y variedad requerida al instante.</p>      
-            </div>
-            <div class="grid-qs">
-                <h3>Info</h3>
-                <p>Actualmente 7 de cada 10 trabajos de renovación de piso nuevo se realizan con piso flotante (piso laminado) y piso vinílico (SPC), nosotros lo recomendamos por su accesibilidad económica y su calidad estética.</p>      
-            </div>
-            <div class="grid-qs">
-                <h3>Rubro</h3>
-                <p>Nos destacamos por nuestros servicios y productos de calidad y precios accesibles.
+            <div class="quienes-somos__bloque">
+                <h3 class="quienes-somos__h3">Nuestro equipo</h3>
+                <p class="quienes-somos__p">Contamos con el mejor equipo de asesores y profesionales técnicos para hacer que sientas tranquilidad a la hora de optar por renovar tu hogar.</p>      
+            </div><!-- .bloque -->
+            
+            <div class="quienes-somos__bloque">
+                <h3 class="quienes-somos__h3">¿Quiénes somos?</h3>
+                <p class="quienes-somos__p">Una empresa dedicada a la venta y colocación de pisos, líder en stock, calidad y variedad. Con una atención personalizada, no solo en ventas, sino en el asesoramiento integral para satisfacer su demanda.</p>      
+            </div><!-- .bloque -->
+
+            <div class="quienes-somos__bloque">
+                <h3 class="quienes-somos__h3">Tenemos stock</h3>
+                <p class="quienes-somos__p">Nos abastecemos de forma permanente con stock para poder suplir la cantidad y variedad requerida al instante.</p>      
+            </div><!-- .bloque -->
+
+            <div class="quienes-somos__bloque">
+                <h3 class="quienes-somos__h3">Info</h3>
+                <p class="quienes-somos__p">Actualmente 7 de cada 10 trabajos de renovación de piso nuevo se realizan con piso flotante (piso laminado) y piso vinílico (SPC), nosotros lo recomendamos por su accesibilidad económica y su calidad estética.</p>      
+            </div><!-- .bloque -->
+
+            <div class="quienes-somos__bloque">
+                <h3 class="quienes-somos__h3">Rubro</h3>
+                <p class="quienes-somos__p">Nos destacamos por nuestros servicios y productos de calidad y precios accesibles.
 
                     Principalmente ofrecemos "insertar servicios y productos".</p>      
-            </div>
-            <div class="grid-qs">
-                <h3>Ubicación</h3>
-                <p>Floor Queen es una empresa ubicada en Ciudad de Buenos Aires, a pocas cuadras del Congreso de la Nación.</p>      
-            </div>
+            </div><!-- .bloque -->
+
+            <div class="quienes-somos__bloque">
+                <h3 class="quienes-somos__h3">Ubicación</h3>
+                <p class="quienes-somos__p">Floor Queen es una empresa ubicada en Ciudad de Buenos Aires, a pocas cuadras del Congreso de la Nación.</p>      
+            </div><!-- .bloque -->
+
         </section>
 
 
         <!-- Nuestros clientes nos recomiendan porque-->  
 
 
-        <section id="nos-recomiendan" class="container-height">
-
-            <div>
+        <section class="testimoniales__contenedor contenedor">
+         <!-- <div id="h2-recomendacion">
                 <h2>Nuestros clientes nos recomiendan porque...</h2>
             </div>
             <div id="recomendaciones-container">
                 <div class="recomendacion">
                     <img src="https://p4.wallpaperbetter.com/wallpaper/233/226/444/francisco-pope-francis-jorge-mario-bergoglio-sivori-wallpaper-preview.jpg" alt="imagen de recomendación de cliente">
                     <h3>Jorge Bergoglio</h3>
-                    <p>Lorem fistrum por la gloria de mi madre esse jarl aliqua llevame al sircoo. De la pradera ullamco qué dise usteer está la cosa muy malar.</p>
+                    <p class="p-recomendacion">Lorem fistrum por la gloria de mi madre esse jarl aliqua llevame al sircoo. De la pradera ullamco qué dise usteer está la cosa muy malar.</p>
                 </div>
                 <div class="recomendacion">
                     <img src="https://p4.wallpaperbetter.com/wallpaper/326/851/694/lionel-messi-4k-wallpaper-preview.jpg" alt="imagen de recomendación de cliente">
                     <h3>Lionel Messi</h3>
-                    <p>Lorem fistrum por la gloria de mi madre esse jarl aliqua llevame al sircoo. De la pradera ullamco qué dise usteer está la cosa muy malar.</p>
+                    <p class="p-recomendacion">Lorem fistrum por la gloria de mi madre esse jarl aliqua llevame al sircoo. De la pradera ullamco qué dise usteer está la cosa muy malar.</p>
                 </div>
                 <div class="recomendacion">
                     <img src="https://p4.wallpaperbetter.com/wallpaper/454/852/877/rock-rock-legend-beatles-wallpaper-preview.jpg" alt="imagen de recomendación de cliente">
                     <h3>Jhon Lenon</h3>
-                    <p>Lorem fistrum por la gloria de mi madre esse jarl aliqua llevame al sircoo. De la pradera ullamco qué dise usteer está la cosa muy malar.</p>
+                    <p class="p-recomendacion">Lorem fistrum por la gloria de mi madre esse jarl aliqua llevame al sircoo. De la pradera ullamco qué dise usteer está la cosa muy malar.</p>
+                </div>
+            </div> -->
+            <h2 class="testimoniales__h2">¿Qué dicen nuestros clientes?</h2>
+
+            <div class="testimoniales__grid contenedor">
+
+                <div class="testimonial tarjeta">
+                <blockquote>
+                <p class="testimonial__p">"Aspernatur, harum pariatur accusantium maxime facilis alias perspiciatis neque!"</p>
+                <footer class="info-testimonial">
+                    <img class="testimonial__img" src="https://p4.wallpaperbetter.com/wallpaper/454/852/877/rock-rock-legend-beatles-wallpaper-preview.jpg" alt="">
+                    <cite>Oswaldo Aponte Escobedo <span>Diseñador en @prisma</span></cite>
+                </footer>
+                </blockquote>
+                </div>
+                <!-- Termina testimonial-->
+
+                <div class="testimonial tarjeta">
+                    <blockquote>
+                    <p class="testimonial__p">"Aspernatur, harum pariatur accusantium maxime facilis alias perspiciatis neque!"</p>
+                    <footer class="info-testimonial">
+                        <img class="testimonial__img" src="https://p4.wallpaperbetter.com/wallpaper/326/851/694/lionel-messi-4k-wallpaper-preview.jpg" alt="">
+                        <cite>Oswaldo Aponte Escobedo <span>Diseñador en @prisma</span></cite>
+                    </footer>
+                </blockquote>
+                </div>
+                <!-- Termina testimonial-->
+
+                <div class="testimonial tarjeta" >
+                    <blockquote>
+                    <p class="testimonial__p">"Aspernatur, harum pariatur accusantium maxime facilis alias perspiciatis neque!"</p>
+                    <footer class="info-testimonial">
+                        <img class="testimonial__img" src="https://p4.wallpaperbetter.com/wallpaper/233/226/444/francisco-pope-francis-jorge-mario-bergoglio-sivori-wallpaper-preview.jpg" alt="">
+                        <cite>Oswaldo Aponte Escobedo <span>Diseñador en @prisma</span></cite>
+                    </footer>
+                </blockquote>
                 </div>
             </div>
+            
+            <!-- Termina testimonial-->
+            
+           
 
         </section> 
 
+        <!-- mapa-->
+        <section>
+      
+      <div id="map" class="map">
+
+      </div>  
+
+        </section>
+
+        <!--Espacio de relleno-->
+        <section class="queremos__contenedor contenedor">
+           
+            <div class="queremos__bloque--1">
+                <svg xmlns="http://www.w3.org/2000/svg" class="queremos__svg" width="52" height="52" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <circle cx="12" cy="12" r="9" />
+                    <line x1="9" y1="9" x2="9.01" y2="9" />
+                    <line x1="15" y1="9" x2="15.01" y2="9" />
+                    <path d="M8 13a4 4 0 1 0 8 0m0 0h-8" />
+                  </svg>
+                <h2 class="queremos__h2">"Queremos que encuentres lo que estabas buscando"</h2>
+                <p class="queremos__p">Lorem fistrum por la gloria de mi madre esse jarl aliqua llevame al sircoo. De la pradera ullamco qué dise usteer está la cosa muy malar.</p>
+            </div>
+            
+            <div class="queremos__bloque--2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="queremos__svg" width="52" height="52" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M5 12l5 5l10 -10" />
+                  </svg>
+                <h2 class="queremos__h2">"Productos y servicios de calidad y confianza"</h2>
+                <p class="queremos__p">Lorem fistrum por la gloria de mi madre esse jarl aliqua llevame al sircoo. De la pradera ullamco qué dise usteer está la cosa muy malar.</p>
+            </div>
+        </section>
        
         <!--  FORMULARIO DE CONTACTO  -->
 
-        <section id="form-container" class="container-height">
+        <section class="contacto__contenedor contenedor">
            
-                <h2>Tu consulta no molesta</h2>
+                <h2 class="contacto__h2">Tu consulta no molesta</h2>
            
-            <section id="form-container1">
-                <div class="container">
-                    <form id="survey-form">
+                <form class="contacto__formulario">
+
                     <div class="form-group"> 
                       <label for="name" id="name-label">Nombre</label>
                        <input 
@@ -236,9 +344,7 @@
                       <div class="form-group">
                         <label for="input-textarea">Déjanos tu consulta</label>
                         <textarea 
-                                  id="comments"
-                                  class="textarea"
-                                  name="input-textarea"
+                                  class="textarea form-control"
                                   >
                         </textarea>
                       </div>
@@ -246,12 +352,10 @@
                         <button 
                                 type="submit" 
                                 id="submit" 
-                                class="submit-button"
+                                class="contacto__boton boton"
                        >Enviar</button>
                       </div>
                    </form>
-                 </div>
-            </section>
         </section>
         </main> 
 
@@ -259,32 +363,31 @@
         <!--    PREGUNTAS FRECUENTES    -->
 
 
-        <section id="preguntas-frecuentes" class="container-height">
-            <div>
-                <h2>Preguntas Frecuentes</h2>
-            </div>
-            <div>
-                <ul>
+        <section class="preguntas__contenedor contenedor">
+           
+                <h2 class="preguntas__h2">Preguntas Frecuentes</h2>
+         
+                <ul class="preguntas__ul">
 
-                    <li>
-                        <h3>¿Puedo encargar alfombras especiales?</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, itaque eaque amet quasi repellendus reprehenderit sapiente</p>
+                    <li class="preguntas_li">
+                        <h3 class="preguntas__h3">¿Puedo encargar alfombras especiales?</h3>
+                        <p class="preguntas__p">"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
                     </li>
-                    <li>
-                        <h3>¿Qué medios de pago reciben?</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, itaque eaque amet quasi repellendus reprehenderit sapiente</p>
+                    <li class="preguntas_li">
+                        <h3 class="preguntas__h3">¿Qué medios de pago reciben?</h3>
+                        <p class="preguntas__p">"But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?"</p>
                     </li>
-                    <li>
-                        <h3>¿El servicio de limpieza de alfombra es a domicilio?</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, itaque eaque amet quasi repellendus reprehenderit sapiente</p>
+                    <li class="preguntas_li">
+                        <h3 class="preguntas__h3">¿El servicio de limpieza de alfombra es a domicilio?</h3>
+                        <p class="preguntas__p">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
                     </li>
-                    <li>
-                        <h3>¿lorem ipsum valem verguipsum?</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, itaque eaque amet quasi repellendus reprehenderit sapiente</p>
+                    <li class="preguntas_li">
+                        <h3 class="preguntas__h3">¿lorem ipsum valem verguipsum?</h3>
+                        <p class="preguntas__p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
                     </li>
                     
                 </ul>
-            </div>
+
         </section>
 
 
@@ -376,6 +479,9 @@
           )
         </script>
 
+        <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js" integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ==" crossorigin=""></script>
+        
+        <script src="map.js"></script>
 
         <!--FINISH-->
 
