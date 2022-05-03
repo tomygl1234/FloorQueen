@@ -150,8 +150,8 @@ h3 {
 
 .portada__contenedor{
     padding: 2rem;
-    width: 100%;
     display:flex;
+    flex-direction: column;
     text-align: center;
     background-image: url("/imagenes/alfombra-amazon_a6d226ce_1606x1558.jpg");
     background-attachment: fixed;
@@ -285,8 +285,8 @@ h3 {
 */
 
 .queremos__svg{
-    width: 20rem;
-    height:8rem;
+    width: 10rem;
+    height: 10rem;
     background-color:var(--color-orange);
     border-radius: 50%;
     padding: 1.5rem;
@@ -323,6 +323,10 @@ h3 {
 .quienes-somos__h3{
     margin-top: 2rem;
 }
+.quienes-somos__p {
+    padding: 0;
+    text-align: justify;
+}
 
 
 
@@ -351,15 +355,21 @@ h3 {
 .testimonial{
     padding: 1rem;
     min-height: 18rem;
+    border: none;
+    box-shadow: inset 0px 0px 10px 5px rgba(0,0,0,0.17);
+    background-color: #F09E1C;
+    color: white;
 }
 
 .testimonial__p{
     padding: 0;
+    margin:1rem;
 }
 .testimonial__img{
-    height: 8rem;
+    height: 6rem;
     border-radius: 70%;
-    width: 30%;
+    width: 15%;
+    margin: 1rem;
 }
 cite{
     font-size: medium;
@@ -576,7 +586,7 @@ footer.info-testimonial cite span{
 /* FOOTER */
 
 
-#footer{
+.footer_contenedor{
     position:relative;
     width: 100%;
     min-height:280px;
@@ -588,76 +598,61 @@ footer.info-testimonial cite span{
     
 }
 
-#footer-grid{
+.footer__grid{
    display: grid;
-   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+   grid-template-columns: repeat(auto-fit, minmax(min(100%, 25rem), 1fr));
    grid-gap: 20px;
    width: 80%;
 }
-#footer-grid h2{
-    margin:25px 0 25px 0;
+
+.footer__h2{
+    margin:3rem 0;
+    color: var(--color-white);
+    text-align: center;
 }
 
 .nav-footer ul{
     display: flex;
     flex-direction: column;
-    align-items:center;
     justify-content: center;
-    gap:10px;
+    text-align: center;
+    gap:1rem;
+
 }
 .nav-footer ul li{
-    
+
+    color: var(--color-white);
     list-style: none;   
     text-decoration: none;
+
     
 }
 
-.nav-footer ul li a{
-    color:var(--color-white);
-    outline: none;
-    text-decoration: none;
-    padding: 2px 1px 0; 
+.footer__nav__link{
+    text-align: left;
 }
-#footer-grid .sec h2{
-    position: relative;
-    color: var(--color-white);
-    font-weight: 500;
-    margin-bottom: 15px;
-}
-#footer-grid .sec h2::before{
-    content: "";
-    position: absolute;
-    bottom: -5px;
-    width:50px;
-    height: 2px;
-    background: var(--color-orange);
-}
-footer #footer-grid .sec p {
-    color: var(--color-white);
-    
+.footer__p {
+    padding: 0;
+    color: white;
 }
 
-.nav-footer ul li a:hover{
-    color:var(--color-orange);
-}
+ /*SEC CONTACTO*/
+ .footer__contacto {
 
-    /*SEC CONTACTO*/
- 
-.info{
+}
+ .info{
     position:relative;
     
 }
 .info li{
-    display: grid;
-    grid-template-columns: 20px 1fr;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    /*display: grid;
+    grid-template-columns: 1rem 1fr ;*/
     margin-bottom: 16px;
-    justify-content: center;
-    align-items: center;
 }
 
-.info li span {
-    color:var(--color-white);
-}
 .info li a{
     color: var(--color-white);
     outline: none;
@@ -667,19 +662,41 @@ footer #footer-grid .sec p {
 .info a:hover{
     color: var(--color-orange);
 }
+
+.icon{
+    width: 5rem;
+    height: 5rem;
+    background-color:black;
+    border-radius: 50%;
+    padding: 1rem;
+}
+
+.footer__contacto .sec{
+    position: relative;
+    color: var(--color-white);
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.footer__contacto .sec::before{
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    width:50px;
+    height: 2px;
+    background: var(--color-orange);
+}
+   
+.footer__h2-left{
+    text-align: left;
+}
+/*   copyright   */
+
 #copyright{
     padding: 0.5rem 0 0.5rem 0;
     width: 100%;
     background-color: var(--color-orange);
     text-align: center;
     color: var(--color-white);
-}
-svg{
-    width: 35px;
-    height:35px;
-    background-color:black;
-    border-radius: 30px;
-    padding: 10px;
 }
 
 /*
