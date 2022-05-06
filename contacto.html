@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Floor | Queen </title>
+        <meta charset="utf-8"></meta>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"></meta>
+        <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css" integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ==" crossorigin="" />
+        <link rel="stylesheet" type="text/css" href="normalize.css"/>
+        <link rel="stylesheet" type="text/css" href="styles.css"/>
+        <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+      
+        <a href="https://api.whatsapp.com/send?phone=+51987654321" class="btn-wsp" target="_blank">
+
+        <!-- AQUI EMPIEZA EL HEADER-->
+
+        <header class="header contenedor">
+            <a href="index.html">
+                <img src="logo1.png" class="header__logo">
+            </a>
+
+                <nav class="nav header__nav">
+  
+                    <a class="nav__link" href="index.html" >Inicio</a>
+                    <a class="nav__link" href="nosotros.html" >Nosotros</a>
+                    <a class="nav__link" href="servicios.html" >Servicios</a>
+                    <a class="nav__link" href="tienda.html" >Tienda</a>
+                    <a class="nav__link" href="preguntasfrecuentes.html" >Preguntas frecuentes</a>
+                    <a class="nav__link" href="contacto.html" >Contacto</a>
+                 
+                </nav>
+
+        </header>
+
+
+        <!-- "MAIN"-->
+
+        <main>
+             <!--  FORMULARIO DE CONTACTO  -->
+
+        <section class="contacto__contenedor contenedor">
+           
+            <h2 class="contacto__h2">Tu consulta no molesta</h2>
+       
+            <form class="contacto__formulario">
+
+                <div class="form-group"> 
+                  <label for="name" id="name-label">Nombre</label>
+                   <input 
+                          type="text" 
+                          name="name"
+                          id="name" 
+                          class="form-control" 
+                          placeholder="Tu nombre y apellido"
+                          required/>
+                   
+                </div>
+                 
+                <div class="form-group">
+                  <label for="email" id="email-label">Email</label>
+                   <input 
+                          type="email" 
+                          name="email" 
+                          id="email" 
+                          class="form-control" 
+                          placeholder="Tu email"
+                          required/>
+                 </div>
+                 <div class="form-group">
+                 <label for="tel" id="number-label">Tel</label>
+                   <input 
+                     type="tel"
+                     name="tel"
+                     id="number"
+                     class="form-control"
+                     placeholder="Número de teléfono"
+                     required/>
+                </div>
+                  
+                  <div class="form-group">
+                    <label for="input-textarea">Déjanos tu consulta</label>
+                    <textarea 
+                              class="textarea form-control"
+                              >
+                    </textarea>
+                  </div>
+                  <div class="form-group">
+                    <button 
+                            type="submit" 
+                            id="submit" 
+                            class="contacto__boton boton"
+                   >Enviar</button>
+                  </div>
+               </form>
+    </section>
+    </main> 
+
+        </main> 
+
+        <!-- FOOTER -->
+
+
+        <footer class="footer_contenedor contenedor">
+
+            <div class="footer__grid">
+
+                 <div class="footer__contacto">
+                     <h2 class="footer__h2 sec" >Menú</h2>
+                    
+                    <nav class="nav-footer">
+                        
+                        <a class="footer__nav__link" href="nosotros.html" >Acerca de</a>
+                        <a class="footer__nav__link" href="preguntasfrecuentes.html" >Preguntas frecuentes</a>
+                        <a class="footer__nav__link" href="tienda.html" >Tienda</a>
+                        <a class="footer__nav__link" href="contacto.html" >Contacto</a>
+                        <a class="footer__nav__link" href="index.html">Inicio</a>
+
+                    </nav>
+                  </div>
+
+                  <div class="footer__contacto">
+
+                    <h2 class="footer__h2 footer__h2-left sec" >Contacto</h2>
+
+                     <ul class="info">
+                          <li>
+
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="15" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <circle cx="12" cy="11" r="3" />
+                                <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
+                            </svg>
+                            <p class="footer__p">Luis Saenz Peña 558<br>
+                                C1110 AAL, CABA.
+                            </p>
+
+                          </li> <!--  .bloque   -->
+                          <li>
+                              
+                              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-phone" width="52" height="52" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                  <path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
+                                </svg>
+                              <p class="footer__p"><a href="tel:1143123375">1143123375</a><br>
+                              <a href="tel:1157051020">1157051020</a></p>
+                          </li><!--  .bloque   -->
+                          <li>
+                              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail" width="52" height="52" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                  <rect x="3" y="5" width="18" height="14" rx="2" />
+                                  <polyline points="3 7 12 13 21 7" />
+                                </svg>
+                              <p class="footer__p"><a href="mailto:contacto@floorqueen.com.ar">contacto@floorqueen.com.ar</a></p>
+                          </li><!--  .bloque   -->
+                          
+                      </ul>
+                </div> 
+ 
+                  
+                  <div class="footer__contacto">
+                    <h2 class="footer__h2 sec" >Tienda</h2>
+
+                    <nav  class="nav-footer"> 
+
+                        <a class="footer__nav__link" href="#" alt="">Alfombras</a>
+                        <a class="footer__nav__link" href="#" alt="">Lamparas</a>
+                        <a class="footer__nav__link" href="#" alt="">Pisos</a>
+                        <a class="footer__nav__link" href="#" alt="">Vinilos</a>
+
+                    </nav>
+
+                </div> 
+                 
+            </div>
+        </footer>
+        <div>
+            <p id="copyright">Copyright © <script>document.write(Date().split(' ')[3])</script> FloorQueen |  <a href="" style="color: black">Diseñado por Creative Studio</a> | Todos los derechos reservados.</p>
+       </div>
+    </body>
+</html>

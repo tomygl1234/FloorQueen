@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <title> Floor | Queen </title>
         <meta charset="utf-8"></meta>
@@ -8,10 +8,13 @@
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css" integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ==" crossorigin="" />
         <link rel="stylesheet" type="text/css" href="normalize.css"/>
         <link rel="stylesheet" type="text/css" href="styles.css"/>
-
+        <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
     </head>
     <body>
-
+        
+        <a href="https://api.whatsapp.com/send/?phone=%2B543874035114&text=!Hola+quiero+consultar+por+un+producto+que+vi+en+su+página+web%21&app_absent=0" class="btn-wsp" target="_blank">
+            <i class="fa fa-whatsapp icono"></i>
+        </a>
         <!-- AQUI EMPIEZA EL HEADER-->
 
         <header class="header contenedor">
@@ -21,12 +24,12 @@
 
                 <nav class="nav header__nav">
   
-                    <a class="nav__link" href="#" alt="Menú Inicio">Inicio</a>
-                    <a class="nav__link" href="#" alt="Menú Nosotros">Nosotros</a>
-                    <a class="nav__link" href="#" alt="Menú Servicios">Servicios</a>
-                    <a class="nav__link" href="#" alt="Menú Tienda">Tienda</a>
-                    <a class="nav__link" href="#" alt="Menú Preguntas frecuentes">Preguntas frecuentes</a>
-                    <a class="nav__link" href="#" alt="Menú Contacto">Contacto</a>
+                    <a class="nav__link" href="index.html" >Inicio</a>
+                    <a class="nav__link" href="nosotros.html" >Nosotros</a>
+                    <a class="nav__link" href="servicios.html" >Servicios</a>
+                    <a class="nav__link" href="tienda.html" >Tienda</a>
+                    <a class="nav__link" href="preguntasfrecuentes.html" >Preguntas frecuentes</a>
+                    <a class="nav__link" href="contacto.html" >Contacto</a>
                  
                 </nav>
 
@@ -99,33 +102,33 @@
             <div class="servicios__grid">
 
                 <div class="servicios__tarjeta tarjeta">
-                    <h3 class="servicios__tarjeta__h3">Alfombras</h3>
-                    <p class="servicios__tarjeta__p">Venta, lavado y reparación de alfombras</p>
-                    <button class="servicios__boton boton">Contacto</button>
-                </div><!--.bloque-->
-
-                <div class="servicios__tarjeta tarjeta">
                     <h3 class="servicios__tarjeta__h3">Overlock</h3>
                     <p class="servicios__tarjeta__p">Corregimos las imperfecciones de los bordes de tu alfombra con nuestras maquinas de alta calidad y precisión. </p>
+                    <img class="servicios__tarjeta__img" src="overlock2.jpg" alt="">
                     <button class="servicios__boton boton">Contacto</button>
                 </div><!--.bloque-->
 
                 <div class="servicios__tarjeta tarjeta">
-                    <h3 class="servicios__tarjeta__h3">Overlock</h3>
+                    <h3 class="servicios__tarjeta__h3">Limpieza de alfombras</h3>
                     <p class="servicios__tarjeta__p">Corregimos las imperfecciones de los bordes de tu alfombra con nuestras maquinas de alta calidad y precisión. </p>
+                    <img class="servicios__tarjeta__img" src="limpiezaalfombras.jpg" alt="">
                     <button class="servicios__boton boton">Contacto</button>
                 </div><!--.bloque-->
 
 
                 <div class="servicios__tarjeta tarjeta">
-                    <h3 class="servicios__tarjeta__h3">Pisos flotantes</h3>
-                    <p class="servicios__tarjeta__p">Instalamos el piso  que más te guste  a domicilio.</p>
+                    
+                    <h3 class="servicios__tarjeta__h3">Colocación de pisos</h3>
+                    <p class="servicios__tarjeta__p">Instalamos piso flotante, vinilo y pvc a domicilio. Instalamos piso flotante, vinilo y pvc a domicilio.
+                        Instalamos piso flotante, vinilo y pvc a domicilio.
+                    </p>
+                    <img class="servicios__tarjeta__img" src="piso-madera-vinilo.jpg" alt="">
                     <button class="servicios__boton boton">Contacto</button>
                 </div><!--.bloque-->
             </div><!--  .servicios__grid  -->
 
             <div>
-                <button class="servicios__boton--final boton">Click aquí para ver todos los servicios</button>
+                <a href="servicios.html"><button class="servicios__boton--final boton">Click aquí para ver todos los servicios</button></a>
             </div>
 
         </section>
@@ -135,8 +138,7 @@
 
 
         <section class="queremos__contenedor contenedor">
-           
-            <div class="queremos__bloque--1">
+               <div class="queremos__bloque">
                 <svg xmlns="http://www.w3.org/2000/svg" class="queremos__svg" width="52" height="52" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
                     <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                     <circle cx="12" cy="12" r="9" />
@@ -148,7 +150,7 @@
                 <p class="queremos__p">Lorem fistrum por la gloria de mi madre esse jarl aliqua llevame al sircoo. De la pradera ullamco qué dise usteer está la cosa muy malar.</p>
             </div>
             
-            <div class="queremos__bloque--2">
+            <div class="queremos__bloque">
                 <svg xmlns="http://www.w3.org/2000/svg" class="queremos__svg" width="52" height="52" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
                     <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                     <path d="M5 12l5 5l10 -10" />
@@ -156,6 +158,7 @@
                 <h2 class="queremos__h2">"Productos y servicios de calidad y confianza"</h2>
                 <p class="queremos__p">Lorem fistrum por la gloria de mi madre esse jarl aliqua llevame al sircoo. De la pradera ullamco qué dise usteer está la cosa muy malar.</p>
             </div>
+           
         </section>
 
 
@@ -201,70 +204,69 @@
 
         <!-- Nuestros clientes nos recomiendan porque-->  
 
-
-        <section class="testimoniales__contenedor contenedor">
-         <!-- <div id="h2-recomendacion">
-                <h2>Nuestros clientes nos recomiendan porque...</h2>
-            </div>
-            <div id="recomendaciones-container">
-                <div class="recomendacion">
-                    <img src="https://p4.wallpaperbetter.com/wallpaper/233/226/444/francisco-pope-francis-jorge-mario-bergoglio-sivori-wallpaper-preview.jpg" alt="imagen de recomendación de cliente">
-                    <h3>Jorge Bergoglio</h3>
-                    <p class="p-recomendacion">Lorem fistrum por la gloria de mi madre esse jarl aliqua llevame al sircoo. De la pradera ullamco qué dise usteer está la cosa muy malar.</p>
+            <div class="testimonials">
+                <div class="inner">
+                  <h1>¿Qué dicen nuestros clientes?</h1>
+                  <div class="border"></div>
+          
+                  <div class="row">
+                    <div class="col">
+                      <div class="testimonial">
+                        <img src="/testimonial/p1.png" alt="">
+                        <div class="name">Gustavo Herrera</div>
+                        <div class="stars">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                        </div>
+          
+                        <p>
+                          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                        </p>
+                      </div>
+                    </div>
+          
+                    <div class="col">
+                      <div class="testimonial">
+                        <img src="/testimonial/p2.png" alt="">
+                        <div class="name">Sinamon Flower</div>
+                        <div class="stars">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="far fa-star"></i>
+                          <i class="far fa-star"></i>
+                        </div>
+          
+                        <p>
+                          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                        </p>
+                      </div>
+                    </div>
+          
+                    <div class="col">
+                      <div class="testimonial">
+                        <img src="/testimonial/p3.png" alt="">
+                        <div class="name">Fernanda De la Cruz</div>
+                        <div class="stars">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="far fa-star"></i>
+                        </div>
+          
+                        <p>
+                          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                        </p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div class="recomendacion">
-                    <img src="https://p4.wallpaperbetter.com/wallpaper/326/851/694/lionel-messi-4k-wallpaper-preview.jpg" alt="imagen de recomendación de cliente">
-                    <h3>Lionel Messi</h3>
-                    <p class="p-recomendacion">Lorem fistrum por la gloria de mi madre esse jarl aliqua llevame al sircoo. De la pradera ullamco qué dise usteer está la cosa muy malar.</p>
-                </div>
-                <div class="recomendacion">
-                    <img src="https://p4.wallpaperbetter.com/wallpaper/454/852/877/rock-rock-legend-beatles-wallpaper-preview.jpg" alt="imagen de recomendación de cliente">
-                    <h3>Jhon Lenon</h3>
-                    <p class="p-recomendacion">Lorem fistrum por la gloria de mi madre esse jarl aliqua llevame al sircoo. De la pradera ullamco qué dise usteer está la cosa muy malar.</p>
-                </div>
-            </div> -->
-            <h2 class="testimoniales__h2">¿Qué dicen nuestros clientes?</h2>
-
-            <div class="testimoniales__grid contenedor">
-
-                <div class="testimonial tarjeta">
-                <blockquote>
-                <p class="testimonial__p">"Aspernatur, harum pariatur accusantium maxime facilis alias perspiciatis neque!"</p>
-                <footer class="info-testimonial">
-                    <img class="testimonial__img" src="https://p4.wallpaperbetter.com/wallpaper/454/852/877/rock-rock-legend-beatles-wallpaper-preview.jpg" alt="">
-                    <cite>Oswaldo Aponte Escobedo <span>Diseñador en @prisma</span></cite>
-                </footer>
-                </blockquote>
-                </div>
-                <!-- Termina testimonial-->
-
-                <div class="testimonial tarjeta">
-                    <blockquote>
-                    <p class="testimonial__p">"Aspernatur, harum pariatur accusantium maxime facilis alias perspiciatis neque!"</p>
-                    <footer class="info-testimonial">
-                        <img class="testimonial__img" src="https://p4.wallpaperbetter.com/wallpaper/326/851/694/lionel-messi-4k-wallpaper-preview.jpg" alt="">
-                        <cite>Oswaldo Aponte Escobedo <span>Diseñador en @prisma</span></cite>
-                    </footer>
-                </blockquote>
-                </div>
-                <!-- Termina testimonial-->
-
-                <div class="testimonial tarjeta" >
-                    <blockquote>
-                    <p class="testimonial__p">"Aspernatur, harum pariatur accusantium maxime facilis alias perspiciatis neque!"</p>
-                    <footer class="info-testimonial">
-                        <img class="testimonial__img" src="https://p4.wallpaperbetter.com/wallpaper/233/226/444/francisco-pope-francis-jorge-mario-bergoglio-sivori-wallpaper-preview.jpg" alt="">
-                        <cite>Oswaldo Aponte Escobedo <span>Diseñador en @prisma</span></cite>
-                    </footer>
-                </blockquote>
-                </div>
-            </div>
-            
-            <!-- Termina testimonial-->
-            
+              </div>
            
-
-        </section> 
 
         <!-- mapa-->
         <section>
@@ -276,26 +278,31 @@
         </section>
 
         <!--Espacio de relleno-->
-        <section class="queremos__contenedor contenedor">
+        <section class="queremos__contenedor__final grid contenedor box__size">
            
-            <div class="queremos__bloque--1">
-                <svg xmlns="http://www.w3.org/2000/svg" class="queremos__svg" width="52" height="52" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <div class="queremos__bloque__final">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-truck-delivery" width="52" height="52" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
                     <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                    <circle cx="12" cy="12" r="9" />
-                    <line x1="9" y1="9" x2="9.01" y2="9" />
-                    <line x1="15" y1="9" x2="15.01" y2="9" />
-                    <path d="M8 13a4 4 0 1 0 8 0m0 0h-8" />
+                    <circle cx="7" cy="17" r="2" />
+                    <circle cx="17" cy="17" r="2" />
+                    <path d="M5 17h-2v-4m-1 -8h11v12m-4 0h6m4 0h2v-6h-8m0 -5h5l3 5" />
+                    <line x1="3" y1="9" x2="7" y2="9" />
                   </svg>
-                <h2 class="queremos__h2">"Queremos que encuentres lo que estabas buscando"</h2>
+                <h2 class="queremos__h2">"¡Enviamos los productos a tu domicilio!"</h2>
                 <p class="queremos__p">Lorem fistrum por la gloria de mi madre esse jarl aliqua llevame al sircoo. De la pradera ullamco qué dise usteer está la cosa muy malar.</p>
             </div>
             
-            <div class="queremos__bloque--2">
-                <svg xmlns="http://www.w3.org/2000/svg" class="queremos__svg" width="52" height="52" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <div class="queremos__bloque__final">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-businessplan" width="52" height="52" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
                     <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                    <path d="M5 12l5 5l10 -10" />
+                      <ellipse cx="16" cy="6" rx="5" ry="3" />
+                    <path d="M11 6v4c0 1.657 2.239 3 5 3s5 -1.343 5 -3v-4" />
+                    <path d="M11 10v4c0 1.657 2.239 3 5 3s5 -1.343 5 -3v-4" />
+                    <path d="M11 14v4c0 1.657 2.239 3 5 3s5 -1.343 5 -3v-4" />
+                    <path d="M7 9h-2.5a1.5 1.5 0 0 0 0 3h1a1.5 1.5 0 0 1 0 3h-2.5" />
+                    <path d="M5 15v1m0 -8v1" />
                   </svg>
-                <h2 class="queremos__h2">"Productos y servicios de calidad y confianza"</h2>
+                <h2 class="queremos__h2">¡Comprá con garantía!</h2>
                 <p class="queremos__p">Lorem fistrum por la gloria de mi madre esse jarl aliqua llevame al sircoo. De la pradera ullamco qué dise usteer está la cosa muy malar.</p>
             </div>
         </section>
@@ -303,9 +310,9 @@
         <!--  FORMULARIO DE CONTACTO  -->
 
         <section class="contacto__contenedor contenedor">
-           
-                <h2 class="contacto__h2">Tu consulta no molesta</h2>
-           
+
+              <h2 class="contacto__h2">Tu consulta no molesta</h2>
+
                 <form class="contacto__formulario">
 
                     <div class="form-group"> 
@@ -398,7 +405,21 @@
 
             <div class="footer__grid">
 
-                <div class="footer__contacto">
+                 <div class="footer__contacto">
+                     <h2 class="footer__h2 sec" >Menú</h2>
+                    
+                    <nav class="nav-footer">
+                        
+                        <a class="footer__nav__link" href="nosotros.html" >Acerca de</a>
+                        <a class="footer__nav__link" href="preguntasfrecuentes.html" >Preguntas frecuentes</a>
+                        <a class="footer__nav__link" href="tienda.html" >Tienda</a>
+                        <a class="footer__nav__link" href="contacto.html" >Contacto</a>
+                        <a class="footer__nav__link" href="index.html">Inicio</a>
+
+                    </nav>
+                  </div>
+
+                  <div class="footer__contacto">
 
                     <h2 class="footer__h2 footer__h2-left sec" >Contacto</h2>
 
@@ -436,37 +457,32 @@
                       </ul>
                 </div> 
  
-                 <div class="footer__contacto">
-                     <h2 class="footer__h2 sec" >Menú</h2>
-                    <nav class="nav-footer">
-                      <ul class="sci">
-                        <li><a class="nav__link footer__nav__link" href="#" alt="Menú Acerca de">Acerca de</a></li>
-                        <li><a class="nav__link footer__nav__link" href="#" alt="Menú Preguntas frecuentes">Preguntas frecuentes</a></li>
-                        <li><a class="nav__link footer__nav__link" href="#" alt="Menú Tienda">Tienda</a></li>
-                        <li><a class="nav__link footer__nav__link" href="#" alt="Menú Contacto">Contacto</a></li>
-                        <li><a class="nav__link footer__nav__link" href="#title">Inicio</a></li>
-                        
-                      </ul>
-                    </nav>
-                  </div>
                   
                   <div class="footer__contacto">
                     <h2 class="footer__h2 sec" >Tienda</h2>
+
                     <nav  class="nav-footer"> 
-                     <ul>
-                        <li><a class="nav__link footer__nav__link" href="#" alt="">Alfombras</a></li>
-                        <li><a class="nav__link footer__nav__link" href="#" alt="">Lamparas</a></li>
-                        <li><a class="nav__link footer__nav__link" href="#" alt="">Pisos</a></li>
-                        <li><a class="nav__link footer__nav__link" href="#" alt="">Vinilos</a></li>
-                    </ul></nav>
-                    
-                    
+
+                        <a class="footer__nav__link" href="#" alt="">Alfombras</a>
+                        <a class="footer__nav__link" href="#" alt="">Lamparas</a>
+                        <a class="footer__nav__link" href="#" alt="">Pisos</a>
+                        <a class="footer__nav__link" href="#" alt="">Vinilos</a>
+
+                    </nav>
+
                 </div> 
                  
             </div>
         </footer>
+        <!--  form optativo    
+        <form action="" class="queremos__formulario">
+            <h3>Déjanos tu mail para recibir nuestro catálogo de productos</h3>
+            <input type="email" class="queremos__formulario__email" required>
+            <input type="submit" value="Enviar">
+        </form>
+        -->  
         <div>
-            <p id="copyright">Copyright © <script>document.write(Date().split(' ')[3])</script> FloorQueen |  <a href="" style="color: black">Diseñado por Creative Studio</a> | Todos los derechos reservados.</p>
+            <p id="copyright">Copyright © <script>document.write(Date().split(' ')[3])</script> FloorQueen |  <a href="">Diseñado por Creative Studio</a> | Todos los derechos reservados.</p>
        </div>
 
 
