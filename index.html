@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="en">
+<html lang="es">
     <head>
         <title> Floor | Queen </title>
         <meta charset="utf-8"></meta>
@@ -54,7 +54,7 @@
                <h1 class="portada__titulo">"Decorá tu casa con nuestras alfombras"</h1> 
                
 
-               <button class="portada__boton boton">Contacto</button>
+               <a href="contacto.html" class="portada__boton boton">Contacto</a>
 
 
 
@@ -89,7 +89,7 @@
             </div> <!--.bloque-->  
          </div><!--  .destacados__grid  -->
          <div>
-             <button class="destacados__boton boton">Click aquí para ver todos los productos</button>
+             <button class="destacados__boton boton"><a href="tienda.html">Click aquí para ver todos los productos</a></button>
          </div>
          
 
@@ -404,8 +404,19 @@
 
         <!-- FOOTER -->
         <section class="footer_contenedor-1 contenedor">
-       
-                  <footer class="pie-pagina">
+
+            <nav class="nav header__nav">
+    
+              <a class="nav__link hover__black" href="index.html" >Inicio</a>
+              <a class="nav__link hover__black" href="nosotros.html" >Nosotros</a>
+              <a class="nav__link hover__black" href="servicios.html" >Servicios</a>
+              <a class="nav__link hover__black" href="tienda.html" >Tienda</a>
+              <a class="nav__link hover__black" href="preguntasfrecuentes.html" >Preguntas frecuentes</a>
+              <a class="nav__link hover__black" href="contacto.html" >Contacto</a>
+          
+            </nav>
+                  <footer class="pie-pagina contenedor"> 
+
                     
                     <div class="grupo-1">
                         <div class="box">
@@ -435,6 +446,45 @@
                    
                             
                 </footer>
+                <footer class="footer_contenedor-1 contenedor flex">
+
+                  <div class="footer__contacto">
+
+                       <ul class="info contenedor">
+                            <li>
+          
+                              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="15" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                  <circle cx="12" cy="11" r="3" />
+                                  <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
+                              </svg>
+                              <p class="footer__p">Luis Saenz Peña 558<br>
+                                  C1110 AAL, CABA.
+                              </p>
+          
+                            </li> <!--  .bloque   -->
+          
+                            <li>
+                              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail" width="52" height="52" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                  <rect x="3" y="5" width="18" height="14" rx="2" />
+                                  <polyline points="3 7 12 13 21 7" />
+                                </svg>
+                              <p class="footer__p"><a href="mailto:contacto@floorqueen.com.ar">contacto@floorqueen.com.ar</a></p>
+                          </li><!--  .bloque   -->
+                          
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-phone" width="52" height="52" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                    <path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
+                                  </svg>
+                                <p class="footer__p"><a href="tel:1143123375">1143123375</a><br>
+                                <a href="tel:1157051020">1157051020</a></p>
+                            </li><!--  .bloque   -->
+                          </div>
+                          
+                          
+        </footer>
 
                
         </section>
