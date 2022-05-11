@@ -127,10 +127,14 @@ h3 {
     flex-direction: column;
     background-color: var(--color-darkpurple);
     width: 100%;
-    padding: .5rem;
+    padding-top: .5rem;
     text-align: center;
 }
-
+@media (min-width: 801px) {
+    .header{
+        padding: .5rem;
+    }
+}
 @media (min-width: 1050px) {
     .header{
         flex-direction: row;
@@ -182,14 +186,15 @@ h3 {
     text-align: center;
     background-image: linear-gradient(rgba(0, 0, 0, 0.250), rgba(0, 0, 0, 0.250)), url("/portadaalfombra1.jpg");
     background-position:bottom;
-    background-attachment: fixed;
     background-size: cover;
-    min-height: 20rem; 
+    min-height: 35rem; 
     
 }
 @media (min-width: 850px) {
     .portada__contenedor{
         min-height: 58rem;  
+        background-position:bottom;
+        background-attachment: fixed;
     }
 }
 .portada__titulo{
@@ -407,7 +412,7 @@ h3 {
     width: 160px;
     height: 5px;
     background: var(--color-orange);
-    margin: 26px auto;
+    margin: 1.5rem auto;
   }
   
   .row{
@@ -716,6 +721,9 @@ h3 {
 }
 */
 .btn-wsp{
+    display: flex;
+    justify-content: center;    
+    align-items: center;
     padding: 0;
     border: 0;
     position:fixed;
@@ -900,7 +908,8 @@ h3 {
     border-radius: 50%;
     padding: 1rem;
 }
-/*   Página nosotros   */       
+/*   Página nosotros   */  
+
 .nosotros__portada{
     background-image: linear-gradient(rgba(0, 0, 0, 0.250), rgba(0, 0, 0, 0.250)), url(/nosotros-portada.jpg);
     background-size: cover;
@@ -919,34 +928,38 @@ h3 {
     flex-direction: column;
     margin: 5rem 0;
 }
-.nosotros__grid{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-}
 .nosotros__p{
     text-align: justify;
 }
-.nosotros__bg__contenedor-1{
-    background-image: url(/nosotros-imagen1.jpg);
-    width: 99%;
-    height: auto;
-    grid-row: 1 / 4;
-    grid-column: 2 / 4;
-
-}
-.nosotros__bg__contenedor-2{
-    background-image: url(/nosotros-imagen2.jpg);
-    width: 99%;
-    height: auto;
-    grid-row: 1 / 4;
-    grid-column: 2 / 4;
-}
-.nosotros__bg__contenedor-3{
-    background-image: url(/nosotros-imagen3.jpg);
-    width: 99%;
-    height: auto;
-    grid-row: 1 / 4;
-    grid-column: 2 / 4;
+@media (min-width: 950px) {
+    .nosotros__grid{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .nosotros__p{
+        text-align: justify;
+        order: 2;
+    }
+    .nosotros__bg__contenedor-1{
+        background-image: url(/nosotros-imagen1.jpg);
+        width: 99%;
+        height: auto;
+        order: 1;
+    
+    }
+    .nosotros__bg__contenedor-2{
+        background-image: url(/nosotros-imagen2.jpg);
+        width: 99%;
+        height: auto;
+        grid-row: 1 / 4;
+        grid-column: 2 / 4;
+    }
+    .nosotros__bg__contenedor-3{
+        background-image: url(/nosotros-imagen3.jpg);
+        width: 99%;
+        height: auto;
+        order: 1;
+    }
 }
 
 /*  Pagina de  PREGUNTAS FRECUENTES   */
@@ -996,3 +1009,42 @@ h3 {
 .tienda__tarjeta{
     justify-content: space-between;
 }
+
+
+
+.menu-toggle-btn{
+    float: right;
+    height: 90px;
+    line-height: 90px !important;
+    color: #fff;
+    font-size: 35px;
+    display: none !important;
+    cursor: pointer;
+  }
+  
+  
+  @media screen and (max-width:800px) {
+    .menu-toggle-btn{
+      display: block !important;
+    }
+  
+    .navigation-menu{
+      position: relative;
+      width: 100%;
+      background: var(--color-darkpurple);
+      right: 0;
+      display: none;
+      padding: 0 0 20px 0;
+    }
+    .navigation-menu a:hover{
+        color: black;
+    }
+    .navigation-menu a{
+      display: block;
+      margin: 1rem 0;
+    }
+  
+    .navigation-menu.active{
+      display: block;
+    }
+  }

@@ -5,13 +5,13 @@
         <meta charset="utf-8"></meta>
         <meta http-equiv="X-UA-Compatible" content="IE=edge"></meta>
         <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
-        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css" integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ==" crossorigin="" />
-        <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
-        <script src="https://kit.fontawesome.com/7e5b2d153f.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
         <script defer src="index.js"></script>
         <link rel="stylesheet" type="text/css" href="normalize.css"/>
         <link rel="stylesheet" type="text/css" href="styles.css"/>
-        
+        <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/7e5b2d153f.js" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
     </head>
     <body>
       
@@ -26,7 +26,9 @@
               <img src="logo1.png" class="header__logo">
           </a>
 
-              <nav class="nav header__nav">
+          <i class="menu-toggle-btn fas fa-bars"></i>
+
+          <nav class="nav header__nav navigation-menu">
 
                   <a class="nav__link" href="index.html" >Inicio</a>
                   <a class="nav__link" href="nosotros.html" >Nosotros</a>
@@ -113,7 +115,9 @@
          <!-- FOOTER -->
          <section class="footer_contenedor-1 contenedor">
 
-          <nav class="nav header__nav">
+          <i class="menu-toggle-btn fas fa-bars"></i>
+
+          <nav class="nav header__nav navigation-menu">
   
             <a class="nav__link hover__black" href="index.html" >Inicio</a>
             <a class="nav__link hover__black" href="nosotros.html" >Nosotros</a>
@@ -199,5 +203,13 @@
         <div>
             <p id="copyright">Copyright © <script>document.write(Date().split(' ')[3])</script> FloorQueen |  <a href="" style="color: black">Diseñado por Creative Studio</a> | Todos los derechos reservados.</p>
        </div>
+
+       <script type="text/javascript">
+        $(".menu-toggle-btn").click(function(){
+          $(this).toggleClass("fa-times");
+          $(".navigation-menu").toggleClass("active");
+        });
+      </script>
+
     </body>
 </html>

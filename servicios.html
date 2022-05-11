@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 
-<html lang="en">
+<html lang="es">
     <head>
         <title> Floor | Queen </title>
         <meta charset="utf-8"></meta>
         <meta http-equiv="X-UA-Compatible" content="IE=edge"></meta>
         <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
-        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css" integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ==" crossorigin="" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
         <link rel="preload" href="style.css" as="style">
         <link rel="preload" href="normalize.css" as="style">
         <link rel="stylesheet" type="text/css" href="normalize.css"/>
         <link rel="stylesheet" type="text/css" href="styles.css"/>
         <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script> 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
+        
     </head>
 
     <body>
@@ -25,8 +27,9 @@
             <a href="index.html">
                 <img src="logo1.png" class="header__logo">
             </a>
+            <i class="menu-toggle-btn fas fa-bars"></i>
 
-                <nav class="nav header__nav">
+                <nav class="nav header__nav navigation-menu">
   
                     <a class="nav__link" href="index.html" >Inicio</a>
                     <a class="nav__link" href="nosotros.html" >Nosotros</a>
@@ -68,82 +71,46 @@
             <div class="servicios__grid">
 
                 <div class="servicios__tarjeta tarjeta">
-                    <h3 class="servicios__tarjeta__h3">Overlock</h3>
+                    <h3 class="servicios__tarjeta__h3">Costurería</h3>
                     <p class="servicios__tarjeta__p">Corregimos las imperfecciones de los bordes de tu alfombra con nuestras maquinas de alta calidad y precisión. </p>
                     <img class="servicios__tarjeta__img" src="overlock2.jpg" alt="">
-                    <button class="servicios__boton boton">Contacto</button>
+                    <a href="contacto.html"><button class="servicios__boton boton">Contacto</button></a>
                 </div><!--.bloque-->
 
                 <div class="servicios__tarjeta tarjeta">
                     <h3 class="servicios__tarjeta__h3">Limpieza de alfombras</h3>
                     <p class="servicios__tarjeta__p">Corregimos las imperfecciones de los bordes de tu alfombra con nuestras maquinas de alta calidad y precisión. </p>
                     <img class="servicios__tarjeta__img" src="limpiezaalfombras.jpg" alt="">
-                    <button class="servicios__boton boton">Contacto</button>
+                    <a href="contacto.html"><button class="servicios__boton boton">Contacto</button></a>
                 </div><!--.bloque-->
 
 
                 <div class="servicios__tarjeta tarjeta">
                     
                     <h3 class="servicios__tarjeta__h3">Colocación de pisos</h3>
-                    <p class="servicios__tarjeta__p">Instalamos piso flotante, vinilo y pvc a domicilio. Instalamos piso flotante, vinilo y pvc a domicilio.
-                        Instalamos piso flotante, vinilo y pvc a domicilio.
+                    <p class="servicios__tarjeta__p">Si compras en nuestra tienda te instalamos tu nuevo piso flotante, vinilo o pvc a domicilio. Consulta gratis abajo. 
                     </p>
                     <img class="servicios__tarjeta__img" src="piso-madera-vinilo.jpg" alt="">
-                    <button class="servicios__boton boton">Contacto</button>
+                    <a href="contacto.html"><button class="servicios__boton boton">Contacto</button></a>
                 </div><!--.bloque-->
                 <div class="servicios__tarjeta tarjeta">
                     
-                    <h3 class="servicios__tarjeta__h3">Colocación de pisos</h3>
-                    <p class="servicios__tarjeta__p">Instalamos piso flotante, vinilo y pvc a domicilio. Instalamos piso flotante, vinilo y pvc a domicilio.
-                        Instalamos piso flotante, vinilo y pvc a domicilio.
+                    <h3 class="servicios__tarjeta__h3">Asesoría en decoración</h3>
+                    <p class="servicios__tarjeta__p">Nuestro equipo está capacitado para asesorarte en todo aquello que nececites para decorar tu casa. ¡Gratis!
                     </p>
-                    <img class="servicios__tarjeta__img" src="piso-madera-vinilo.jpg" alt="">
-                    <button class="servicios__boton boton">Contacto</button>
+                    <img class="servicios__tarjeta__img" src="/portadaalfombra1.jpg" alt="">
+                    <a href="contacto.html"><button class="servicios__boton boton">Contacto</button></a>
                 </div><!--.bloque-->
-                <div class="servicios__tarjeta tarjeta">
-                    
-                    <h3 class="servicios__tarjeta__h3">Colocación de pisos</h3>
-                    <p class="servicios__tarjeta__p">Instalamos piso flotante, vinilo y pvc a domicilio. Instalamos piso flotante, vinilo y pvc a domicilio.
-                        Instalamos piso flotante, vinilo y pvc a domicilio.
-                    </p>
-                    <img class="servicios__tarjeta__img" src="piso-madera-vinilo.jpg" alt="">
-                    <button class="servicios__boton boton">Contacto</button>
-                </div><!--.bloque-->
-                <div class="servicios__tarjeta tarjeta">
-                    
-                    <h3 class="servicios__tarjeta__h3">Colocación de pisos</h3>
-                    <p class="servicios__tarjeta__p">Instalamos piso flotante, vinilo y pvc a domicilio. Instalamos piso flotante, vinilo y pvc a domicilio.
-                        Instalamos piso flotante, vinilo y pvc a domicilio.
-                    </p>
-                    <img class="servicios__tarjeta__img" src="piso-madera-vinilo.jpg" alt="">
-                    <button class="servicios__boton boton">Contacto</button>
-                </div><!--.bloque-->
-                <div class="servicios__tarjeta tarjeta">
-                    
-                    <h3 class="servicios__tarjeta__h3">Colocación de pisos</h3>
-                    <p class="servicios__tarjeta__p">Instalamos piso flotante, vinilo y pvc a domicilio. Instalamos piso flotante, vinilo y pvc a domicilio.
-                        Instalamos piso flotante, vinilo y pvc a domicilio.
-                    </p>
-                    <img class="servicios__tarjeta__img" src="piso-madera-vinilo.jpg" alt="">
-                    <button class="servicios__boton boton">Contacto</button>
-                </div><!--.bloque-->
-                <div class="servicios__tarjeta tarjeta">
-                    
-                    <h3 class="servicios__tarjeta__h3">Colocación de pisos</h3>
-                    <p class="servicios__tarjeta__p">Instalamos piso flotante, vinilo y pvc a domicilio. Instalamos piso flotante, vinilo y pvc a domicilio.
-                        Instalamos piso flotante, vinilo y pvc a domicilio.
-                    </p>
-                    <img class="servicios__tarjeta__img" src="piso-madera-vinilo.jpg" alt="">
-                    <button class="servicios__boton boton">Contacto</button>
-                </div><!--.bloque-->
+   
+                
             </div><!--  .servicios__grid  -->
 
         </section>
         <!-- FOOTER -->
           <!-- FOOTER -->
           <section class="footer_contenedor-1 contenedor">
-
-            <nav class="nav header__nav">
+            <i class="menu-toggle-btn fas fa-bars"></i>
+            <nav class="nav header__nav navigation-menu">
     
               <a class="nav__link hover__black" href="index.html" >Inicio</a>
               <a class="nav__link hover__black" href="nosotros.html" >Nosotros</a>
@@ -232,6 +199,12 @@
        </div>
 
 
+       <script type="text/javascript">
+        $(".menu-toggle-btn").click(function(){
+          $(this).toggleClass("fa-times");
+          $(".navigation-menu").toggleClass("active");
+        });
+      </script>
 
     </body>
 </html>
