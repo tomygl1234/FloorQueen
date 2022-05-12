@@ -985,10 +985,18 @@ h3 {
 }
 .servicios__contenedor-pag{
     margin: 0;
+    background-image: var(--color-white);
+}
+.servicios__h2___pag{
+    color: var(--color-black);
 }
 .servicios_portada__titulo{
     color: var(--color-white);
     margin: 0;
+}
+.servicios__pag__tarjeta{
+    color: var(--color-black);
+    border: 1px solid black;
 }
 /*  paginda de tienda    */ 
 .tienda__portada{
@@ -1008,8 +1016,19 @@ h3 {
 }
 .tienda__tarjeta{
     justify-content: space-between;
+    border: .1rem solid black;
+    border-radius: 0 0 1.5rem 1.5rem ;
 }
-
+.tienda__img{
+    border-radius: 0;     
+}
+.tienda__btn__contenedor{
+    padding: 0 0 0 0;
+}
+.tienda__btn{
+    border-radius: 0 0 1.4rem 1.4rem ;
+    
+}
 
 
 .menu-toggle-btn{
