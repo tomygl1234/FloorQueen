@@ -15,6 +15,8 @@
         <link rel="stylesheet" type="text/css" href="styles.css"/>
         <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script> 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
+        <link rel="stylesheet" href="app.scss" />
+        <script defer src="app.js"></script>
     </head>
 
     <body>
@@ -87,7 +89,7 @@
             </div><!--.bloque-->
 
             <div class="destacado__tarjeta tarjeta">
-                <img src="/imagenes/lampara_b4177712_600x600.png" alt="" class="destacados__bloque__img" loading="lazy">
+                <img src="/imagenes/lampara_b4177712_600x600.jpg" alt="" class="destacados__bloque__img" loading="lazy">
                 <h3 class="destacado__bloque__h3">Lamparas</h3>
                 <p class="destacado__bloque__p">Nuestras lamparas se venden como pan caliente, aún así tenemos stock.</p>
             </div> <!--.bloque-->  
@@ -225,7 +227,7 @@
 
             <div class="testimonials">
                 <div class="inner">
-                  <h1>¿Qué dicen nuestros clientes?</h1>
+                  <h2>¿Qué dicen nuestros clientes?</h2>
                   <div class="border"></div>
           
                   <div class="row">
@@ -390,11 +392,33 @@
 
         <!--    PREGUNTAS FRECUENTES    -->
 
+        
 
         <section class="preguntas__contenedor contenedor flex">
            
                 <h2 class="preguntas__h2">Preguntas Frecuentes</h2>
-         
+
+                <div class="acordeon">
+                  <div class="bloque activo">
+                    <h2 class="h2">¿Qué tipo de servicios ofrecen?</h2>
+                    <div class="contenido">Ofrecemos servicio de limpieza de alfombras de todo tipo y también de reparación de alfombras. 
+                      Además ofrecemos servicios de colocación de todo tipo de pisos. Tanto limpieza de alfombras como colocación de pisos lo 
+                      realizamos a domicilio.</div>
+                  </div>
+                  <div class="bloque">
+                    <h2 class="h2">¿Con qué tipo de empresas trabajan?</h2>
+                    <div class="contenido">Trabajamos con empresas de todo tipo: "Desde pequeñas y medianas empresas hasta empresas como Banco Macro y otros grandes".</div>
+                  </div>
+                  <div class="bloque">
+                    <h2 class="h2">¿Qué medios de pago reciben?</h2>
+                    <div class="contenido">Recibimos todos los medios de pago tradicionales: "Efectivo, debito y crédito".</div>
+                  </div>
+                  <div class="bloque">
+                    <h2 class="h2">¿Cómo arreglan las alfombras?</h2>
+                    <div class="contenido">Nuestra empresa cuenta con un sistema de maquinas overlock para reparar y corregir los bordes de tu alfombra.</div>
+                  </div>
+                </div>
+                <!-- 
                 <ul class="preguntas__ul">
                   
                   <li class="preguntas_li">
@@ -421,7 +445,7 @@
                   </li>
                    
               </ul>
-
+              -->
         </section>
 
 

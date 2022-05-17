@@ -68,8 +68,6 @@ img {
 
 h1, h2, h3 {
     text-align: center;
-    color: var(--secundario);
-    font-family: var(--fuentePrincipal);
     
 }
 h1 {
@@ -362,7 +360,7 @@ h3 {
     grid-template-columns: repeat(auto-fit, minmax(min(100%, 40rem), 1fr));
     gap: 2rem;     
     background-image: linear-gradient(rgba(5, 7, 12, 0.50), rgba(5, 7, 12, 0.50)),
-    url(/imagenes/Limpieza\ de\ alfombra.jpg);
+    url(/imagenes/limpieza-de-alfombra.jpg);
     background-attachment: fixed;
     background-size: cover; 
     background-position: bottom;
@@ -567,7 +565,7 @@ h3 {
 
     display: flex;
     flex-direction: column;
-    padding: 2rem;
+    padding: 2rem 10%;
     height: auto;
     margin: 5rem 0 5rem 0;
     
@@ -906,23 +904,22 @@ h3 {
     padding:0;
 }
 .preguntas__h2{
-    text-align: left;
     padding: 0;
     margin: 0;
     color: var(--color-orange);
 }
 /* Pagina de Servicios */   
 .servicios__portada{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.250), rgba(0, 0, 0, 0.250)), url(/servicios-portada.jpg);
+    background-image: linear-gradient(var(--color-darkpurple), var(--color-orange));
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom;
-    height: 30rem;
+    height: 15rem;
     flex-direction: column;
 }
 .servicios__contenedor-pag{
     margin: 0;
-    background-image: var(--color-white);
+    background-image: linear-gradient(var(--color-orange), var(--color-darkpurple) );
 }
 .servicios__h2___pag{
     color: var(--color-black);
@@ -933,7 +930,6 @@ h3 {
 }
 .servicios__pag__tarjeta{
     color: var(--color-black);
-    border: 1px solid black;
 }
 /*  paginda de tienda    */ 
 .tienda__portada{
@@ -1020,4 +1016,63 @@ h3 {
     justify-content: center;
 
     gap: 3rem;   
+  }
+
+
+
+  /*        ACORDEON        */
+
+
+
+  .acordeon {
+    width: 100%;
+    padding: 1rem;
+    color: var(--color-orange);
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    border-radius: 1rem;
+    background-color: var(--color-darkpurple);
+    box-shadow: -22px 10px 5px 0px rgba(0,0,0,0.75);
+  }
+  
+  .acordeon .bloque {
+    margin: 0 0 1rem;
+    padding: 1rem;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    border-radius: 1rem;
+    background-color: var(--color-white);
+    cursor: pointer;
+  }
+  
+  .acordeon .h2 {
+    margin: 0 0 1rem;
+    padding: 1rem;
+    color: var(--color-orange);
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    border-radius: 1rem;
+    cursor: pointer;
+
+  }
+  .acordeon .h2:hover {
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    border-radius: 1rem;
+  }
+  
+  .acordeon .contenido {
+    height: 0;
+    padding: 0rem;
+    overflow: hidden;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    color: var(--color-black);
+  }
+  .contenido{
+    font-size: large;
+  }
+  
+  .acordeon .bloque.activo .contenido {
+    height: 20rem;
   }
