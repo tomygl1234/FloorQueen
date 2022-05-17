@@ -658,7 +658,7 @@ h3 {
     font-size: 20px;
 }
 .pie-pagina .grupo-1 .box p{
-    color: #efefef;
+    color:var(--color-white);
     margin-bottom: 10px;
 }
 .pie-pagina .grupo-1 .red-social a{
@@ -747,82 +747,10 @@ h3 {
     color: #0df053;
 }
 
-.about__contenedor{
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #f1f1f1;
-}
 
-.about-section{
-    background: url(acercadeimg.jpg) no-repeat left;
-    background-size: 55%;
-    background-color: black;
-    overflow: hidden;
-    padding: 100px 0;
-}
-
-.inner-container{
-    width: 55%;
-    float: right;
-    background: white;
-    padding: 150px;
-    margin-right: 5rem;
-    border-radius: 1.5rem;
-}
-
-.inner-container h1{
-    margin-bottom: 30px;
-    font-size: 30px;
-    font-weight: 900;
-    color: black;
-}
-.inner-container span{
-    color: black;
-}
-
-.text{
-    font-size: 13px;
-    color: black;
-    line-height: 30px;
-    text-align: justify;
-    margin-bottom: 40px;
-}
-
-.skills{
-    display: flex;
-    justify-content: space-between;
-    font-weight: 700;
-    font-size: 13px;
-}
-
-@media screen and (max-width:1200px){
-    .inner-container{
-        padding: 80px;
-    }
-}
-
-@media screen and (max-width:1000px){
-    .about-section{
-        background-size: 100%;
-        padding: 100px 40px;
-    }
-    .inner-container{
-        width: 100%;
-    }
-}
-
-@media screen and (max-width:600px){
-    .about-section{
-        padding: 0;
-    }
-    .inner-container{
-        padding: 60px;
-    }
-}
 
 /*       PAGINA DE CONTACTO        */
+/*
 .contacto__portada{
     background-image: linear-gradient(rgba(0, 0, 0, 0.250), rgba(0, 0, 0, 0.250)), url(/portada-contacto.jpg);
     background-size: cover;
@@ -831,6 +759,12 @@ h3 {
     background-position: center;
     height: 30rem;
     flex-direction: column;
+}
+*/
+.contacto__portada{
+    margin: 0;
+    background-image: linear-gradient(var(--color-darkpurple),var(--color-orange));
+    height: 10rem;
 }
 .contacto__portada h1 {
     color: var(--color-white);
@@ -963,16 +897,19 @@ h3 {
 }
 
 /*  Pagina de  PREGUNTAS FRECUENTES   */
-.preguntas__portada{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.250), rgba(0, 0, 0, 0.250)), url(/preguntasfrecuentes-portada.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    height: 30rem;
-    flex-direction: column;
-}
+
 .preguntas__contenedor-pag{
     margin: 0;
+    padding: 0 10% 3rem 10%;
+}
+.preguntas__h1{
+    padding:0;
+}
+.preguntas__h2{
+    text-align: left;
+    padding: 0;
+    margin: 0;
+    color: var(--color-orange);
 }
 /* Pagina de Servicios */   
 .servicios__portada{
@@ -1066,4 +1003,21 @@ h3 {
     .navigation-menu.active{
       display: block;
     }
+  }
+
+  .marcas__contenedor{
+    margin: 1rem 0;
+    flex-direction: column;
+  }
+  .marcas__h2{
+    color: #54595F;
+  }
+  .marcas__grid{
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 25rem), 1fr));
+    align-items: center;
+    justify-content: center;
+
+    gap: 3rem;   
   }
